@@ -6,20 +6,36 @@ use BotMan\BotMan\BotMan;
 use Illuminate\Http\Request;
 use App\Http\Conversations\teste;
 use App\Http\Conversations\OnboardingConversation;
+use App\Http\Conversations\IniciarConversa;
 use BotMan\BotMan\Messages\Attachments\Image;
 use BotMan\BotMan\Messages\Outgoing\OutgoingMessage;
 use BotMan\BotMan\Messages\Attachments\File;
 use BotMan\BotMan\Messages\Attachments\Audio;
 use BotMan\BotMan\Cache\LaravelCache;
+use BotMan\BotMan\Messages\Incoming\Answer;
+use BotMan\BotMan\Messages\Outgoing\Question;
+use BotMan\BotMan\Messages\Outgoing\Actions\Button;
+
 class BotManController extends Controller
 {
     
-
     public function handle()
     {
         
+        //Driver
         $botman = app('botman');
-                
+
+        //Iniciar conversas
+        $botman->hears('conversar', function (BotMan $bot) {
+            $bot->startConversation(new IniciarConversa());
+        });
+
+        //Conversas criadas
+        $botman->hears('s', function (BotMan $bot) {
+            $bot->startConversation(new OnboardingConversation());
+        });
+
+        //Testes        
         $botman->hears('q', function (BotMan $bot) {
             // Create attachment
             $attachment = new Image('https://botman.io/img/logo.png', [
@@ -49,19 +65,6 @@ class BotManController extends Controller
         });
 
 
-
-        //$botman->hears('s', BotManController::class.'@startConversation');
-
-        $botman->hears('s', function (BotMan $bot) {
-            $bot->startConversation(new OnboardingConversation());
-        });
-
-        $botman->hears('teste', function (BotMan $bot) {
-            $bot->startConversation(new teste());
-        });
-
-        
-
         $botman->listen();
     }
 
@@ -70,9 +73,4 @@ class BotManController extends Controller
         return view('botman-web::chat');
     }
 
-
-    //public function startConversation(BotMan $bot)
-    //{
-    //    $bot->startConversation(new OnboardingConversation());
-    //}
 }

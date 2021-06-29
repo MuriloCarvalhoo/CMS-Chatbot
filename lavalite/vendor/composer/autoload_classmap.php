@@ -29,6 +29,7 @@ return array(
     'App\\Http\\Controllers\\UserController' => $baseDir . '/app/Http/Controllers/UserController.php',
     'App\\Http\\Controllers\\User\\ClientResourceController' => $baseDir . '/app/Http/Controllers/User/ClientResourceController.php',
     'App\\Http\\Controllers\\User\\UserResourceController' => $baseDir . '/app/Http/Controllers/User/UserResourceController.php',
+    'App\\Http\\Conversations\\IniciarConversa' => $baseDir . '/app/Http/Conversations/IniciarConversa.php',
     'App\\Http\\Conversations\\OnboardingConversation' => $baseDir . '/app/Http/Conversations/OnboardingConversation.php',
     'App\\Http\\Conversations\\teste' => $baseDir . '/app/Http/Conversations/teste.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',

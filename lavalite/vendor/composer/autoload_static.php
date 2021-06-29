@@ -719,6 +719,7 @@ class ComposerStaticInitc9501b61b28828ff41a070f31249d05d
         'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
         'App\\Http\\Controllers\\User\\ClientResourceController' => __DIR__ . '/../..' . '/app/Http/Controllers/User/ClientResourceController.php',
         'App\\Http\\Controllers\\User\\UserResourceController' => __DIR__ . '/../..' . '/app/Http/Controllers/User/UserResourceController.php',
+        'App\\Http\\Conversations\\IniciarConversa' => __DIR__ . '/../..' . '/app/Http/Conversations/IniciarConversa.php',
         'App\\Http\\Conversations\\OnboardingConversation' => __DIR__ . '/../..' . '/app/Http/Conversations/OnboardingConversation.php',
         'App\\Http\\Conversations\\teste' => __DIR__ . '/../..' . '/app/Http/Conversations/teste.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
