@@ -1,0 +1,516 @@
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:28:25 +0000] "GET / HTTP/1.1" 200 3398 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:28:25 +0000] "GET / HTTP/1.1" 200 bytesIn:682 bytesOut:3398 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/css/styles.css HTTP/1.1" 200 13736 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/css/styles.css HTTP/1.1" 200 bytesIn:1369 bytesOut:13736 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/css/settings.css HTTP/1.1" 200 3747 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/css/settings.css HTTP/1.1" 200 bytesIn:1370 bytesOut:3747 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/dist/css/app.css HTTP/1.1" 200 67947 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/dist/css/app.css HTTP/1.1" 200 bytesIn:1372 bytesOut:67947 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/dist/js/manifest.js HTTP/1.1" 200 1073 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/dist/js/manifest.js HTTP/1.1" 200 bytesIn:1359 bytesOut:1073 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/dist/js/vendor.js HTTP/1.1" 200 78241 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/dist/js/vendor.js HTTP/1.1" 200 bytesIn:1359 bytesOut:78241 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/js/widget.js HTTP/1.1" 200 11201 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/js/widget.js HTTP/1.1" 200 bytesIn:1260 bytesOut:11201 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/js/main.js HTTP/1.1" 200 2998 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/js/main.js HTTP/1.1" 200 bytesIn:1350 bytesOut:2998 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/img/logo/logo.svg HTTP/1.1" 304 181 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/img/logo/logo.svg HTTP/1.1" 304 bytesIn:1411 bytesOut:181 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/dist/js/app.js HTTP/1.1" 200 219799 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/dist/js/app.js HTTP/1.1" 200 bytesIn:1356 bytesOut:219799 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/img/hero-image.png HTTP/1.1" 200 74176 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/img/hero-image.png HTTP/1.1" 200 bytesIn:1327 bytesOut:74176 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/img/content-img1.png HTTP/1.1" 200 99821 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/img/content-img1.png HTTP/1.1" 200 bytesIn:1329 bytesOut:99821 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1269 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/img/hero-shape-svg.svg HTTP/1.1" 404 7062 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/img/hero-shape-svg.svg HTTP/1.1" 404 bytesIn:1331 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/dist/fonts/la-solid-900.woff2 HTTP/1.1" 304 182 "http://localhost:8888/themes/user/assets/dist/css/app.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/dist/webfonts/fa-brands-400.woff2 HTTP/1.1" 304 182 "http://localhost:8888/themes/user/assets/dist/css/app.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/dist/fonts/la-solid-900.woff2 HTTP/1.1" 304 bytesIn:1427 bytesOut:182 reqTime:0
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/dist/webfonts/fa-brands-400.woff2 HTTP/1.1" 304 bytesIn:1431 bytesOut:182 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:28:28 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1269 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:28:33 +0000] "GET / HTTP/1.1" 200 3398 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:28:33 +0000] "GET / HTTP/1.1" 200 bytesIn:1393 bytesOut:3398 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:28:35 +0000] "GET /themes/user/assets/img/hero-shape-svg.svg HTTP/1.1" 404 7062 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:28:35 +0000] "GET /themes/user/assets/img/hero-shape-svg.svg HTTP/1.1" 404 bytesIn:1334 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:28:35 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7063 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:28:35 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1332 bytesOut:7063 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:31:04 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7063 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:31:04 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1810 bytesOut:7063 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:31:04 +0000] "GET /favicon.ico HTTP/1.1" 200 4074 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:31:04 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1886 bytesOut:4074 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:31:55 +0000] "-" 408 0 "-" "-"
+[httpd:access] docker.vm:80 - - 172.22.0.1 - - [27/Jun/2021:22:31:55 +0000] "-" 408 bytesIn:0 bytesOut:0 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:22 +0000] "GET /user HTTP/1.1" 302 1743 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:22 +0000] "GET /user HTTP/1.1" 302 bytesIn:1960 bytesOut:1743 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:22 +0000] "GET /user/login HTTP/1.1" 200 2623 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:22 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:1967 bytesOut:2623 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:22 +0000] "GET /themes/user/assets/dist/js/jquery.min.js HTTP/1.1" 200 31263 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:22 +0000] "GET /themes/user/assets/dist/js/jquery.min.js HTTP/1.1" 200 bytesIn:1915 bytesOut:31263 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:22 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:22 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1821 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:22 +0000] "GET /themes/user/assets/img/login-bg.png HTTP/1.1" 304 182 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:22 +0000] "GET /themes/user/assets/img/login-bg.png HTTP/1.1" 304 bytesIn:1965 bytesOut:182 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:24 +0000] "POST /user/login HTTP/1.1" 302 1742 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:24 +0000] "POST /user/login HTTP/1.1" 302 bytesIn:2205 bytesOut:1742 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:25 +0000] "GET /user/login HTTP/1.1" 200 2768 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:25 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:2003 bytesOut:2768 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:26 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:26 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1821 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:28 +0000] "GET /user/login HTTP/1.1" 200 2623 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:28 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:2003 bytesOut:2623 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:28 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:28 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1821 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:28 +0000] "GET /favicon.ico HTTP/1.1" 200 4074 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:28 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1896 bytesOut:4074 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:30 +0000] "POST /user/login HTTP/1.1" 302 1742 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:30 +0000] "POST /user/login HTTP/1.1" 302 bytesIn:2205 bytesOut:1742 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:30 +0000] "POST /user/login HTTP/1.1" 302 1743 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:30 +0000] "POST /user/login HTTP/1.1" 302 bytesIn:2204 bytesOut:1743 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:32 +0000] "GET /user/login HTTP/1.1" 200 2768 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:32 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:2003 bytesOut:2768 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:32 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:32 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1821 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:37 +0000] "GET / HTTP/1.1" 200 3397 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:37 +0000] "GET / HTTP/1.1" 200 bytesIn:1917 bytesOut:3397 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:39 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:39 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1811 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:39 +0000] "GET /themes/user/assets/img/hero-shape-svg.svg HTTP/1.1" 404 7062 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:39 +0000] "GET /themes/user/assets/img/hero-shape-svg.svg HTTP/1.1" 404 bytesIn:1873 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:39 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:39 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1811 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:41 +0000] "GET /user HTTP/1.1" 302 1742 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:41 +0000] "GET /user HTTP/1.1" 302 bytesIn:1961 bytesOut:1742 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:41 +0000] "GET /user/login HTTP/1.1" 200 2623 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:41 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:1967 bytesOut:2623 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:32:41 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:32:41 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1821 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:33:24 +0000] "-" 408 0 "-" "-"
+[httpd:access] docker.vm:80 - - 172.22.0.1 - - [27/Jun/2021:22:33:24 +0000] "-" 408 bytesIn:0 bytesOut:0 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:41:31 +0000] "POST /user/login HTTP/1.1" 302 1743 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:41:31 +0000] "POST /user/login HTTP/1.1" 302 bytesIn:2179 bytesOut:1743 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:41:32 +0000] "GET /user/login HTTP/1.1" 200 2768 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:41:32 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:1978 bytesOut:2768 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:41:32 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:41:32 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1796 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:41:39 +0000] "GET /admin/login HTTP/1.1" 200 2625 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:41:39 +0000] "GET /admin/login HTTP/1.1" 200 bytesIn:1902 bytesOut:2625 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/css/settings.css HTTP/1.1" 200 3747 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/css/settings.css HTTP/1.1" 200 bytesIn:1807 bytesOut:3747 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/css/styles.css HTTP/1.1" 200 13733 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/css/styles.css HTTP/1.1" 200 bytesIn:1805 bytesOut:13733 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/dist/js/jquery.min.js HTTP/1.1" 200 31263 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/dist/js/jquery.min.js HTTP/1.1" 200 bytesIn:1799 bytesOut:31263 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/dist/css/app.css HTTP/1.1" 200 67947 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/dist/css/app.css HTTP/1.1" 200 bytesIn:1808 bytesOut:67947 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/dist/js/manifest.js HTTP/1.1" 200 1073 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/dist/js/manifest.js HTTP/1.1" 200 bytesIn:1797 bytesOut:1073 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/js/main.js HTTP/1.1" 200 2997 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/js/main.js HTTP/1.1" 200 bytesIn:1788 bytesOut:2997 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/img/logo/logo.svg HTTP/1.1" 200 901 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/img/logo/logo.svg HTTP/1.1" 200 bytesIn:1854 bytesOut:901 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/dist/js/vendor.js HTTP/1.1" 200 78241 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/dist/js/vendor.js HTTP/1.1" 200 bytesIn:1795 bytesOut:78241 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/dist/js/app.js HTTP/1.1" 200 219799 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/dist/js/app.js HTTP/1.1" 200 bytesIn:1792 bytesOut:219799 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 7063 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1797 bytesOut:7063 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/img/login-bg.png HTTP/1.1" 200 91140 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/img/login-bg.png HTTP/1.1" 200 bytesIn:1854 bytesOut:91140 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/dist/fonts/la-solid-900.woff2 HTTP/1.1" 200 97015 "http://localhost:8888/themes/admin/assets/dist/css/app.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/dist/fonts/la-solid-900.woff2 HTTP/1.1" 200 bytesIn:1858 bytesOut:97015 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/dist/webfonts/fa-brands-400.woff2 HTTP/1.1" 200 78723 "http://localhost:8888/themes/admin/assets/dist/css/app.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/dist/webfonts/fa-brands-400.woff2 HTTP/1.1" 200 bytesIn:1862 bytesOut:78723 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:41:40 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1798 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:41:41 +0000] "POST /admin/login HTTP/1.1" 302 1747 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:41:41 +0000] "POST /admin/login HTTP/1.1" 302 bytesIn:2182 bytesOut:1747 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:41:43 +0000] "GET /admin/login HTTP/1.1" 200 2770 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:41:43 +0000] "GET /admin/login HTTP/1.1" 200 bytesIn:1980 bytesOut:2770 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:41:43 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:41:43 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1798 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:43:55 +0000] "GET /admin/login HTTP/1.1" 200 2625 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:43:55 +0000] "GET /admin/login HTTP/1.1" 200 bytesIn:1995 bytesOut:2625 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/css/settings.css HTTP/1.1" 200 3747 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/css/settings.css HTTP/1.1" 200 bytesIn:1849 bytesOut:3747 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/css/styles.css HTTP/1.1" 200 13733 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/css/styles.css HTTP/1.1" 200 bytesIn:1847 bytesOut:13733 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/dist/js/jquery.min.js HTTP/1.1" 200 31264 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/dist/js/jquery.min.js HTTP/1.1" 200 bytesIn:1840 bytesOut:31264 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/dist/css/app.css HTTP/1.1" 200 67947 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/dist/css/app.css HTTP/1.1" 200 bytesIn:1850 bytesOut:67947 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/dist/js/manifest.js HTTP/1.1" 200 1073 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/dist/js/manifest.js HTTP/1.1" 200 bytesIn:1839 bytesOut:1073 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/js/main.js HTTP/1.1" 200 2997 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/js/main.js HTTP/1.1" 200 bytesIn:1830 bytesOut:2997 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/dist/js/vendor.js HTTP/1.1" 200 78241 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/dist/js/vendor.js HTTP/1.1" 200 bytesIn:1837 bytesOut:78241 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/img/logo/logo.svg HTTP/1.1" 200 901 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/img/logo/logo.svg HTTP/1.1" 200 bytesIn:1896 bytesOut:901 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/dist/js/app.js HTTP/1.1" 200 219799 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/dist/js/app.js HTTP/1.1" 200 bytesIn:1834 bytesOut:219799 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/img/login-bg.png HTTP/1.1" 200 91140 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/img/login-bg.png HTTP/1.1" 200 bytesIn:1896 bytesOut:91140 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/dist/fonts/la-solid-900.woff2 HTTP/1.1" 200 97015 "http://localhost:8888/themes/admin/assets/dist/css/app.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/dist/fonts/la-solid-900.woff2 HTTP/1.1" 200 bytesIn:1900 bytesOut:97015 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/dist/webfonts/fa-brands-400.woff2 HTTP/1.1" 200 78723 "http://localhost:8888/themes/admin/assets/dist/css/app.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/dist/webfonts/fa-brands-400.woff2 HTTP/1.1" 200 bytesIn:1904 bytesOut:78723 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1840 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /favicon.ico HTTP/1.1" 200 4074 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:43:56 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1871 bytesOut:4074 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:43:57 +0000] "POST /admin/login HTTP/1.1" 302 1747 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:43:57 +0000] "POST /admin/login HTTP/1.1" 302 bytesIn:2181 bytesOut:1747 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:43:59 +0000] "GET /admin/login HTTP/1.1" 200 2770 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:43:59 +0000] "GET /admin/login HTTP/1.1" 200 bytesIn:1979 bytesOut:2770 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:43:59 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:43:59 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1797 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:44:19 +0000] "POST /admin/login HTTP/1.1" 302 1748 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:44:19 +0000] "POST /admin/login HTTP/1.1" 302 bytesIn:2180 bytesOut:1748 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:44:21 +0000] "GET /admin/login HTTP/1.1" 200 2770 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:44:21 +0000] "GET /admin/login HTTP/1.1" 200 bytesIn:1979 bytesOut:2770 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:44:21 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:44:21 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1797 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:44:23 +0000] "GET /admin/login HTTP/1.1" 200 2624 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:44:23 +0000] "GET /admin/login HTTP/1.1" 200 bytesIn:1979 bytesOut:2624 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:44:23 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:44:23 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1797 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:44:24 +0000] "GET /favicon.ico HTTP/1.1" 200 4074 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:44:24 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1871 bytesOut:4074 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:44:26 +0000] "GET /admin/login/google HTTP/1.1" 500 606314 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:44:26 +0000] "GET /admin/login/google HTTP/1.1" 500 bytesIn:1960 bytesOut:606314 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:45:11 +0000] "-" 408 0 "-" "-"
+[httpd:access] docker.vm:80 - - 172.22.0.1 - - [27/Jun/2021:22:45:11 +0000] "-" 408 bytesIn:0 bytesOut:0 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:45:20 +0000] "-" 408 0 "-" "-"
+[httpd:access] docker.vm:80 - - 172.22.0.1 - - [27/Jun/2021:22:45:20 +0000] "-" 408 bytesIn:0 bytesOut:0 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:49:22 +0000] "GET /admin/login HTTP/1.1" 200 2625 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:49:22 +0000] "GET /admin/login HTTP/1.1" 200 bytesIn:1975 bytesOut:2625 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:49:23 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:49:23 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1794 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:49:23 +0000] "GET /favicon.ico HTTP/1.1" 200 4074 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:49:23 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1868 bytesOut:4074 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:49:24 +0000] "POST /admin/login HTTP/1.1" 500 650390 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:49:24 +0000] "POST /admin/login HTTP/1.1" 500 bytesIn:2198 bytesOut:650390 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:50:14 +0000] "GET /user HTTP/1.1" 302 1743 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:50:14 +0000] "GET /user HTTP/1.1" 302 bytesIn:1910 bytesOut:1743 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:50:14 +0000] "GET /user/login HTTP/1.1" 200 2622 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:50:14 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:1917 bytesOut:2622 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:50:14 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:50:14 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1811 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:50:14 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:50:14 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1811 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:50:15 +0000] "POST /user/login HTTP/1.1" 500 650438 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:50:15 +0000] "POST /user/login HTTP/1.1" 500 bytesIn:2179 bytesOut:650438 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:50:18 +0000] "GET / HTTP/1.1" 500 642565 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:50:18 +0000] "GET / HTTP/1.1" 500 bytesIn:1890 bytesOut:642565 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:50:58 +0000] "GET / HTTP/1.1" 500 620890 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:50:58 +0000] "GET / HTTP/1.1" 500 bytesIn:1916 bytesOut:620890 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:51:00 +0000] "GET /favicon.ico HTTP/1.1" 200 4075 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:51:00 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1859 bytesOut:4075 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:51:07 +0000] "GET / HTTP/1.1" 500 620897 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:51:07 +0000] "GET / HTTP/1.1" 500 bytesIn:1916 bytesOut:620897 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:51:09 +0000] "GET /favicon.ico HTTP/1.1" 200 4075 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:51:09 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1859 bytesOut:4075 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:53:30 +0000] "GET / HTTP/1.1" 500 620710 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:53:30 +0000] "GET / HTTP/1.1" 500 bytesIn:1923 bytesOut:620710 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:53:32 +0000] "GET /favicon.ico HTTP/1.1" 200 4075 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:53:32 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1866 bytesOut:4075 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:55:14 +0000] "GET / HTTP/1.1" 500 620847 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:55:14 +0000] "GET / HTTP/1.1" 500 bytesIn:1909 bytesOut:620847 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:55:16 +0000] "GET /favicon.ico HTTP/1.1" 200 4075 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:55:16 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1852 bytesOut:4075 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:57:55 +0000] "GET / HTTP/1.1" 500 620839 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:57:55 +0000] "GET / HTTP/1.1" 500 bytesIn:1909 bytesOut:620839 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:57:56 +0000] "GET /favicon.ico HTTP/1.1" 200 4075 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:57:56 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1852 bytesOut:4075 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:58:02 +0000] "GET /user HTTP/1.1" 302 1743 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:58:02 +0000] "GET /user HTTP/1.1" 302 bytesIn:1887 bytesOut:1743 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:58:02 +0000] "GET /user/login HTTP/1.1" 200 2622 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:58:02 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:1894 bytesOut:2622 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:58:02 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:58:02 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1788 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:58:04 +0000] "POST /user/login HTTP/1.1" 302 1742 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:58:04 +0000] "POST /user/login HTTP/1.1" 302 bytesIn:2172 bytesOut:1742 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:58:06 +0000] "GET /user/login HTTP/1.1" 200 2767 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:58:06 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:1970 bytesOut:2767 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:58:06 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:58:06 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1788 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:58:12 +0000] "GET / HTTP/1.1" 500 620873 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:58:12 +0000] "GET / HTTP/1.1" 500 bytesIn:1883 bytesOut:620873 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:58:56 +0000] "GET / HTTP/1.1" 200 3396 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:58:56 +0000] "GET / HTTP/1.1" 200 bytesIn:1926 bytesOut:3396 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:58:58 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:58:58 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1795 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:58:58 +0000] "GET /themes/user/assets/img/hero-shape-svg.svg HTTP/1.1" 404 7063 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:58:58 +0000] "GET /themes/user/assets/img/hero-shape-svg.svg HTTP/1.1" 404 bytesIn:1856 bytesOut:7063 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:58:58 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:58:58 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1795 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:58:58 +0000] "GET /favicon.ico HTTP/1.1" 200 4074 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:58:58 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1870 bytesOut:4074 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:59:01 +0000] "GET /user HTTP/1.1" 302 1742 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:59:01 +0000] "GET /user HTTP/1.1" 302 bytesIn:1935 bytesOut:1742 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:59:01 +0000] "GET /user/login HTTP/1.1" 200 2622 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:59:01 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:1941 bytesOut:2622 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:59:01 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:59:01 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1795 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:59:03 +0000] "POST /user/login HTTP/1.1" 302 1742 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:59:03 +0000] "POST /user/login HTTP/1.1" 302 bytesIn:2192 bytesOut:1742 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:59:04 +0000] "GET /user/login HTTP/1.1" 200 2767 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:59:04 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:1990 bytesOut:2767 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:59:04 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:59:04 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1808 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:22:59:09 +0000] "GET /user/password/reset HTTP/1.1" 500 606304 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:22:59:09 +0000] "GET /user/password/reset HTTP/1.1" 500 bytesIn:1972 bytesOut:606304 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:00:01 +0000] "-" 408 0 "-" "-"
+[httpd:access] docker.vm:80 - - 172.22.0.1 - - [27/Jun/2021:23:00:01 +0000] "-" 408 bytesIn:0 bytesOut:0 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:00:03 +0000] "-" 408 0 "-" "-"
+[httpd:access] docker.vm:80 - - 172.22.0.1 - - [27/Jun/2021:23:00:03 +0000] "-" 408 bytesIn:0 bytesOut:0 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:20:28 +0000] "GET /user/login HTTP/1.1" 200 2623 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:20:28 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:1975 bytesOut:2623 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:20:28 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:20:28 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1794 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:20:28 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:20:28 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1794 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:20:28 +0000] "GET /favicon.ico HTTP/1.1" 200 4074 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:20:28 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1869 bytesOut:4074 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:20:30 +0000] "POST /user/login HTTP/1.1" 302 1742 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:20:30 +0000] "POST /user/login HTTP/1.1" 302 bytesIn:2178 bytesOut:1742 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:20:31 +0000] "GET /user/login HTTP/1.1" 200 2767 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:20:31 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:1976 bytesOut:2767 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:20:31 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:20:31 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1794 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:20:36 +0000] "POST /user/login HTTP/1.1" 302 1742 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:20:36 +0000] "POST /user/login HTTP/1.1" 302 bytesIn:2180 bytesOut:1742 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:20:38 +0000] "GET /user/login HTTP/1.1" 200 2767 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:20:38 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:1976 bytesOut:2767 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:20:38 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:20:38 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1794 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:20:50 +0000] "GET /user/register HTTP/1.1" 500 33216 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:20:50 +0000] "GET /user/register HTTP/1.1" 500 bytesIn:1952 bytesOut:33216 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:20:50 +0000] "GET /user/register HTTP/1.1" 500 606076 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:20:50 +0000] "GET /user/register HTTP/1.1" 500 bytesIn:1952 bytesOut:606076 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:21:46 +0000] "-" 408 0 "-" "-"
+[httpd:access] docker.vm:80 - - 172.22.0.1 - - [27/Jun/2021:23:21:46 +0000] "-" 408 bytesIn:0 bytesOut:0 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:21:46 +0000] "-" 408 0 "-" "-"
+[httpd:access] docker.vm:80 - - 172.22.0.1 - - [27/Jun/2021:23:21:46 +0000] "-" 408 bytesIn:0 bytesOut:0 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:26:10 +0000] "GET /user/login HTTP/1.1" 200 2623 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:26:10 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:1975 bytesOut:2623 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:26:10 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:26:10 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1794 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:26:10 +0000] "GET /favicon.ico HTTP/1.1" 200 4074 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:26:10 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1869 bytesOut:4074 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:26:13 +0000] "POST /user/login HTTP/1.1" 302 1742 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:26:13 +0000] "POST /user/login HTTP/1.1" 302 bytesIn:2178 bytesOut:1742 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:26:15 +0000] "GET /user/login HTTP/1.1" 200 2767 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:26:15 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:1976 bytesOut:2767 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:26:15 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:26:15 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1794 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:27:01 +0000] "-" 408 0 "-" "-"
+[httpd:access] docker.vm:80 - - 172.22.0.1 - - [27/Jun/2021:23:27:01 +0000] "-" 408 bytesIn:0 bytesOut:0 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:29:26 +0000] "GET /user/login HTTP/1.1" 200 2623 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:29:26 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:1975 bytesOut:2623 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:29:26 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:29:26 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1794 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:29:26 +0000] "GET /favicon.ico HTTP/1.1" 200 4074 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:29:26 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1869 bytesOut:4074 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:29:31 +0000] "POST /user/login HTTP/1.1" 302 1742 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:29:31 +0000] "POST /user/login HTTP/1.1" 302 bytesIn:2175 bytesOut:1742 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:29:33 +0000] "GET /user/login HTTP/1.1" 200 2759 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:29:33 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:1976 bytesOut:2759 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:29:33 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:29:33 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1794 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:30:17 +0000] "-" 408 0 "-" "-"
+[httpd:access] docker.vm:80 - - 172.22.0.1 - - [27/Jun/2021:23:30:17 +0000] "-" 408 bytesIn:0 bytesOut:0 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:30:31 +0000] "POST /user/login HTTP/1.1" 302 1743 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:30:31 +0000] "POST /user/login HTTP/1.1" 302 bytesIn:2174 bytesOut:1743 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:30:33 +0000] "GET /user/login HTTP/1.1" 200 2759 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:30:33 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:1976 bytesOut:2759 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:30:33 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:30:33 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1794 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:31:23 +0000] "-" 408 0 "-" "-"
+[httpd:access] docker.vm:80 - - 172.22.0.1 - - [27/Jun/2021:23:31:23 +0000] "-" 408 bytesIn:0 bytesOut:0 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:32:44 +0000] "GET /user/login HTTP/1.1" 200 2623 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:32:44 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:1975 bytesOut:2623 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:32:44 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:32:44 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1794 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:32:45 +0000] "GET /favicon.ico HTTP/1.1" 200 4074 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:32:45 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1869 bytesOut:4074 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:32:47 +0000] "POST /user/login HTTP/1.1" 302 1742 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:32:47 +0000] "POST /user/login HTTP/1.1" 302 bytesIn:2178 bytesOut:1742 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:32:49 +0000] "GET /user/login HTTP/1.1" 200 2767 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:32:49 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:1976 bytesOut:2767 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:32:49 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:32:49 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1794 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:33:36 +0000] "-" 408 0 "-" "-"
+[httpd:access] docker.vm:80 - - 172.22.0.1 - - [27/Jun/2021:23:33:36 +0000] "-" 408 bytesIn:0 bytesOut:0 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:33:40 +0000] "GET /user/login HTTP/1.1" 200 2623 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:33:40 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:1994 bytesOut:2623 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:33:41 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:33:41 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1813 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:33:41 +0000] "GET /favicon.ico HTTP/1.1" 200 4074 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:33:41 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1888 bytesOut:4074 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:33:42 +0000] "POST /user/login HTTP/1.1" 302 1712 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:33:42 +0000] "POST /user/login HTTP/1.1" 302 bytesIn:2197 bytesOut:1712 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:33:44 +0000] "GET /user HTTP/1.1" 200 3102 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:33:44 +0000] "GET /user HTTP/1.1" 200 bytesIn:1989 bytesOut:3102 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:33:46 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:33:46 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1807 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:33:46 +0000] "GET /themes/user/assets/dist/fonts/la-brands-400.woff2 HTTP/1.1" 200 85035 "http://localhost:8888/themes/user/assets/dist/css/app.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:33:46 +0000] "GET /themes/user/assets/dist/fonts/la-brands-400.woff2 HTTP/1.1" 200 bytesIn:1874 bytesOut:85035 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:33:54 +0000] "GET /user HTTP/1.1" 200 3103 "http://localhost:8888/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:33:54 +0000] "GET /user HTTP/1.1" 200 bytesIn:1956 bytesOut:3103 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:33:56 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:33:56 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1807 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:33:58 +0000] "GET /admin/page/page HTTP/1.1" 302 1747 "http://localhost:8888/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:33:58 +0000] "GET /admin/page/page HTTP/1.1" 302 bytesIn:1968 bytesOut:1747 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:33:58 +0000] "GET /admin/login HTTP/1.1" 200 2623 "http://localhost:8888/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:33:58 +0000] "GET /admin/login HTTP/1.1" 200 bytesIn:1964 bytesOut:2623 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:33:58 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:33:58 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1815 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:34:00 +0000] "POST /admin/login HTTP/1.1" 302 1767 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:34:00 +0000] "POST /admin/login HTTP/1.1" 302 bytesIn:2199 bytesOut:1767 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:34:01 +0000] "GET /admin/page/page HTTP/1.1" 500 677902 "http://localhost:8888/admin/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:34:01 +0000] "GET /admin/page/page HTTP/1.1" 500 bytesIn:2001 bytesOut:677902 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:34:16 +0000] "GET /admin/login HTTP/1.1" 302 1718 "http://localhost:8888/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:34:16 +0000] "GET /admin/login HTTP/1.1" 302 bytesIn:1943 bytesOut:1718 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:34:18 +0000] "GET /admin HTTP/1.1" 200 3674 "http://localhost:8888/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:34:18 +0000] "GET /admin HTTP/1.1" 200 bytesIn:1938 bytesOut:3674 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:34:20 +0000] "GET /themes/admin/assets/dist/fonts/la-brands-400.woff2 HTTP/1.1" 200 85035 "http://localhost:8888/themes/admin/assets/dist/css/app.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:34:20 +0000] "GET /themes/admin/assets/dist/fonts/la-brands-400.woff2 HTTP/1.1" 200 bytesIn:1876 bytesOut:85035 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:34:20 +0000] "GET /themes/admin/assets/dist/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 80564 "http://localhost:8888/themes/admin/assets/dist/css/app.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:34:20 +0000] "GET /themes/admin/assets/dist/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 bytesIn:1877 bytesOut:80564 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:34:23 +0000] "GET /admin/block/block HTTP/1.1" 500 678043 "http://localhost:8888/admin" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:34:23 +0000] "GET /admin/block/block HTTP/1.1" 500 bytesIn:1971 bytesOut:678043 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:35:44 +0000] "GET /admin HTTP/1.1" 200 3675 "http://localhost:8888/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:35:44 +0000] "GET /admin HTTP/1.1" 200 bytesIn:1953 bytesOut:3675 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:35:46 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/admin" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:35:46 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1779 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:35:46 +0000] "GET /favicon.ico HTTP/1.1" 200 4074 "http://localhost:8888/admin" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:35:46 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1853 bytesOut:4074 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:35:48 +0000] "GET / HTTP/1.1" 200 3400 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:35:48 +0000] "GET / HTTP/1.1" 200 bytesIn:1879 bytesOut:3400 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:35:50 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:35:50 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1773 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:35:50 +0000] "GET /themes/user/assets/img/hero-shape-svg.svg HTTP/1.1" 404 7063 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:35:50 +0000] "GET /themes/user/assets/img/hero-shape-svg.svg HTTP/1.1" 404 bytesIn:1834 bytesOut:7063 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:36:54 +0000] "GET / HTTP/1.1" 200 3401 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:36:54 +0000] "GET / HTTP/1.1" 200 bytesIn:1904 bytesOut:3401 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:36:56 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:36:56 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1773 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:36:56 +0000] "GET /themes/user/assets/img/hero-shape-svg.svg HTTP/1.1" 404 7063 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:36:56 +0000] "GET /themes/user/assets/img/hero-shape-svg.svg HTTP/1.1" 404 bytesIn:1834 bytesOut:7063 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:36:56 +0000] "GET /favicon.ico HTTP/1.1" 200 4074 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:36:56 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1848 bytesOut:4074 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:36:57 +0000] "GET /user HTTP/1.1" 200 3104 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:36:57 +0000] "GET /user HTTP/1.1" 200 bytesIn:1923 bytesOut:3104 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:36:59 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:36:59 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1777 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:37:02 +0000] "GET /perguntas HTTP/1.1" 200 3209 "http://localhost:8888/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:37:02 +0000] "GET /perguntas HTTP/1.1" 200 bytesIn:1932 bytesOut:3209 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:37:04 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/perguntas" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:37:04 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1782 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:37:06 +0000] "GET /user HTTP/1.1" 200 3104 "http://localhost:8888/perguntas" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:37:06 +0000] "GET /user HTTP/1.1" 200 bytesIn:1932 bytesOut:3104 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:37:08 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:37:08 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1777 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:37:10 +0000] "GET /admin/contact/contact HTTP/1.1" 500 678066 "http://localhost:8888/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:37:10 +0000] "GET /admin/contact/contact HTTP/1.1" 500 bytesIn:1944 bytesOut:678066 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:37:30 +0000] "GET /user/profile HTTP/1.1" 404 7063 "http://localhost:8888/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:37:30 +0000] "GET /user/profile HTTP/1.1" 404 bytesIn:1934 bytesOut:7063 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:37:37 +0000] "GET /admin/roles/role HTTP/1.1" 500 677829 "http://localhost:8888/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:37:37 +0000] "GET /admin/roles/role HTTP/1.1" 500 bytesIn:1938 bytesOut:677829 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:37:45 +0000] "GET /admin/settings HTTP/1.1" 500 678462 "http://localhost:8888/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:37:45 +0000] "GET /admin/settings HTTP/1.1" 500 bytesIn:1936 bytesOut:678462 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:38:33 +0000] "-" 408 0 "-" "-"
+[httpd:access] docker.vm:80 - - 172.22.0.1 - - [27/Jun/2021:23:38:33 +0000] "-" 408 bytesIn:0 bytesOut:0 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:48:40 +0000] "GET /admin/settings HTTP/1.1" 500 678518 "http://localhost:8888/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:48:40 +0000] "GET /admin/settings HTTP/1.1" 500 bytesIn:1999 bytesOut:678518 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:48:43 +0000] "GET /favicon.ico HTTP/1.1" 200 4075 "http://localhost:8888/admin/settings" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:48:43 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1898 bytesOut:4075 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:52:19 +0000] "GET /admin/settings HTTP/1.1" 500 678472 "http://localhost:8888/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:52:19 +0000] "GET /admin/settings HTTP/1.1" 500 bytesIn:1961 bytesOut:678472 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:52:21 +0000] "GET /favicon.ico HTTP/1.1" 200 4075 "http://localhost:8888/admin/settings" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:52:21 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1886 bytesOut:4075 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:55:27 +0000] "GET /admin/settings HTTP/1.1" 200 3503 "http://localhost:8888/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:55:27 +0000] "GET /admin/settings HTTP/1.1" 200 bytesIn:1969 bytesOut:3503 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:55:30 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/admin/settings" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:55:30 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1800 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:55:30 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/admin/settings" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:55:30 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1800 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:55:30 +0000] "GET /favicon.ico HTTP/1.1" 200 4075 "http://localhost:8888/admin/settings" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:55:30 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1873 bytesOut:4075 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:55:30 +0000] "GET /admin/settings/0 HTTP/1.1" 200 1535 "http://localhost:8888/admin/settings" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:55:30 +0000] "GET /admin/settings/0 HTTP/1.1" 200 bytesIn:1825 bytesOut:1535 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:55:31 +0000] "GET /themes/admin/assets/img/empty-select.png HTTP/1.1" 200 25138 "http://localhost:8888/admin/settings" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:55:31 +0000] "GET /themes/admin/assets/img/empty-select.png HTTP/1.1" 200 bytesIn:1860 bytesOut:25138 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:55:33 +0000] "GET /admin/page/page HTTP/1.1" 200 3987 "http://localhost:8888/admin/settings" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:55:33 +0000] "GET /admin/page/page HTTP/1.1" 200 bytesIn:1960 bytesOut:3987 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:55:36 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/admin/page/page" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:55:36 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1801 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:55:36 +0000] "GET /admin/page/page/0 HTTP/1.1" 200 1535 "http://localhost:8888/admin/page/page" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:55:36 +0000] "GET /admin/page/page/0 HTTP/1.1" 200 bytesIn:1827 bytesOut:1535 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:55:37 +0000] "GET /admin/page/page/KlEj0G4vod HTTP/1.1" 200 2966 "http://localhost:8888/admin/page/page" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:55:37 +0000] "GET /admin/page/page/KlEj0G4vod HTTP/1.1" 200 bytesIn:1891 bytesOut:2966 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:55:40 +0000] "GET /themes/admin/assets/img/down-arrow.svg HTTP/1.1" 404 7062 "http://localhost:8888/themes/admin/assets/css/styles.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:55:40 +0000] "GET /themes/admin/assets/img/down-arrow.svg HTTP/1.1" 404 bytesIn:1878 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:55:40 +0000] "GET /themes/admin/assets/dist/css/font/summernote.woff2 HTTP/1.1" 200 6417 "http://localhost:8888/themes/admin/assets/dist/css/app.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:55:40 +0000] "GET /themes/admin/assets/dist/css/font/summernote.woff2 HTTP/1.1" 200 bytesIn:1858 bytesOut:6417 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:55:39 +0000] "GET /admin/page/page/n6g4V248P7 HTTP/1.1" 200 4024 "http://localhost:8888/admin/page/page" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:55:39 +0000] "GET /admin/page/page/n6g4V248P7 HTTP/1.1" 200 bytesIn:1892 bytesOut:4024 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:55:40 +0000] "GET /admin/page/page/O0d4dMjEXR HTTP/1.1" 200 2990 "http://localhost:8888/admin/page/page" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:55:40 +0000] "GET /admin/page/page/O0d4dMjEXR HTTP/1.1" 200 bytesIn:1891 bytesOut:2990 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:55:41 +0000] "GET /admin/block/block HTTP/1.1" 200 3386 "http://localhost:8888/admin/page/page" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:55:41 +0000] "GET /admin/block/block HTTP/1.1" 200 bytesIn:1963 bytesOut:3386 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:55:43 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/admin/block/block" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:55:43 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1803 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:55:44 +0000] "GET /admin/block/block/0 HTTP/1.1" 200 1535 "http://localhost:8888/admin/block/block" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:55:44 +0000] "GET /admin/block/block/0 HTTP/1.1" 200 bytesIn:1831 bytesOut:1535 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:55:56 +0000] "GET /admin/contact/contact HTTP/1.1" 200 3769 "http://localhost:8888/admin/block/block" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:55:56 +0000] "GET /admin/contact/contact HTTP/1.1" 200 bytesIn:1968 bytesOut:3769 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:55:59 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/admin/contact/contact" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:55:59 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1807 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:56:00 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/admin/contact/contact" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:56:00 +0000] "GET /themes/admin/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1807 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:56:00 +0000] "GET /admin/contact/contact/0 HTTP/1.1" 200 1535 "http://localhost:8888/admin/contact/contact" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:56:00 +0000] "GET /admin/contact/contact/0 HTTP/1.1" 200 bytesIn:1839 bytesOut:1535 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:56:04 +0000] "POST /admin/logout HTTP/1.1" 302 1687 "http://localhost:8888/admin/contact/contact" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:56:04 +0000] "POST /admin/logout HTTP/1.1" 302 bytesIn:2138 bytesOut:1687 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:56:06 +0000] "GET / HTTP/1.1" 200 3392 "http://localhost:8888/admin/contact/contact" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:56:06 +0000] "GET / HTTP/1.1" 200 bytesIn:1978 bytesOut:3392 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:56:08 +0000] "GET /themes/user/assets/img/hero-shape-svg.svg HTTP/1.1" 404 7063 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:56:08 +0000] "GET /themes/user/assets/img/hero-shape-svg.svg HTTP/1.1" 404 bytesIn:1846 bytesOut:7063 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:56:08 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:56:08 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1785 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:56:08 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:56:08 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1785 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:56:11 +0000] "GET / HTTP/1.1" 200 3392 "http://localhost:8888/admin/contact/contact" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:56:11 +0000] "GET / HTTP/1.1" 200 bytesIn:1978 bytesOut:3392 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:56:12 +0000] "GET /themes/user/assets/img/hero-shape-svg.svg HTTP/1.1" 404 7062 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:56:12 +0000] "GET /themes/user/assets/img/hero-shape-svg.svg HTTP/1.1" 404 bytesIn:1847 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:56:12 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:56:12 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1785 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:56:12 +0000] "GET /favicon.ico HTTP/1.1" 200 4074 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:56:12 +0000] "GET /favicon.ico HTTP/1.1" 200 bytesIn:1860 bytesOut:4074 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:56:20 +0000] "GET /user HTTP/1.1" 302 1743 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:56:20 +0000] "GET /user HTTP/1.1" 302 bytesIn:1934 bytesOut:1743 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:56:21 +0000] "GET /user/login HTTP/1.1" 200 2622 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:56:21 +0000] "GET /user/login HTTP/1.1" 200 bytesIn:1941 bytesOut:2622 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:56:21 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:56:21 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1795 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:56:22 +0000] "POST /user/login HTTP/1.1" 302 1712 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:56:22 +0000] "POST /user/login HTTP/1.1" 302 bytesIn:2179 bytesOut:1712 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:56:24 +0000] "GET /user HTTP/1.1" 200 3101 "http://localhost:8888/user/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:56:24 +0000] "GET /user HTTP/1.1" 200 bytesIn:1971 bytesOut:3101 reqTime:2
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:56:26 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:56:26 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1789 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:56:34 +0000] "POST /user/logout HTTP/1.1" 302 1688 "http://localhost:8888/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:56:34 +0000] "POST /user/logout HTTP/1.1" 302 bytesIn:2119 bytesOut:1688 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:56:35 +0000] "GET / HTTP/1.1" 200 3395 "http://localhost:8888/user" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:56:35 +0000] "GET / HTTP/1.1" 200 bytesIn:1961 bytesOut:3395 reqTime:1
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:56:37 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 7062 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:56:37 +0000] "GET /themes/user/assets/js/login-register.js HTTP/1.1" 404 bytesIn:1785 bytesOut:7062 reqTime:0
+docker.vm:80 172.22.0.1 - - [27/Jun/2021:23:56:37 +0000] "GET /themes/user/assets/img/hero-shape-svg.svg HTTP/1.1" 404 7063 "http://localhost:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+[httpd:access] localhost:80 - - 172.22.0.1 - - [27/Jun/2021:23:56:37 +0000] "GET /themes/user/assets/img/hero-shape-svg.svg HTTP/1.1" 404 bytesIn:1846 bytesOut:7063 reqTime:0

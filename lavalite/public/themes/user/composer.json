@@ -1,0 +1,13 @@
+{
+    "name": "litecms/theme-default",
+    "description": "Deafalut theme for lavalite cms.",
+    "keywords": ["Lavalite", "Public", "Theme"],
+    "license": "MIT",
+    "type": "lavalite-theme",
+    "authors": [
+        {
+            "name": "Lavalite",
+            "email": "info@lavalite.org"
+        }
+    ]
+}
