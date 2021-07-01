@@ -28,7 +28,9 @@ class ChatboxPublicController extends ResourceController
      *
      * @return response
      */
-    protected function getChatbox($slug)
+
+    /**
+     * protected function getChatbox($slug)
     {
         // get Chatbox by slug
         $chatbox = $this->model->getChatbox($slug);
@@ -36,7 +38,7 @@ class ChatboxPublicController extends ResourceController
         if (is_null($chatbox)) {
             abort(404);
         }
-
+    
         //Set theme variables
         $view = $chatbox->view;
         $view = view()->exists('chatbox::' . $view) ? $view : 'default';
@@ -54,5 +56,6 @@ class ChatboxPublicController extends ResourceController
             ->output();
 
     }
+    */
 
 }

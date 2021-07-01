@@ -1,5 +1,5 @@
 <div class="content-area">
   <div class="container">
-    {!!$chatbox->tipo!!}
+    {!!$chatbox->content!!}
   </div>
 </div>

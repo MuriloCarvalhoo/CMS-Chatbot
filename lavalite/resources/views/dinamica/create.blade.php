@@ -54,9 +54,10 @@
                     </thead>
                 
                     <tbody id="addRow" class="addRow">
+                        <!--Pergunta com Anexo-->
                         <tr>
                             <td>
-                               <div class="form-control"> Pergunta </div>
+                               <div class="form-control"> Pergunta c/ Anexo </div>
                             <td>
                                 <input type="text" name="nome_fun[]" value="" placeholder="Nome da funcao" class="form-control">
                             </td>
@@ -85,9 +86,10 @@
                             </td>
                         </tr>
 
+                        <!--Resposta sem anexo-->
                         <tr>
                             <td>
-                            <div class="form-control"> Pergunta </div>
+                            <div class="form-control"> Resposta s/ Aenxo </div>
                             <td>
                                 <input type="text" name="nome_fun[]" value="" placeholder="Nome da funcao" class="form-control">
                             </td>

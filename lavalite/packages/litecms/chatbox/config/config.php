@@ -30,35 +30,26 @@ return [
         'hidden' => [],
         'visible' => [],
         'guarded' => ['*'],
-        'slugs' => ['slug' => 'name'],
         'dates' => ['deleted_at'],
-        'fillable' => ['heading', 'meta_title', 'name', 'slug', 'order', 'view', 'compile', 'status', 'upload_folder', 'content', 'meta_keyword', 'meta_description', 'abstract'],
-        'translatable' => ['name', 'heading', 'content', 'meta_title', 'meta_keyword', 'meta_description'],
+        'fillable' => ['conversa', 'tipo', 'nome', 'ouvir', 'validar', 'pergunta', 'resposta', 'nome_prox', 'file', 'view', 'status', 'upload_folder'],
+        'translatable' => ['conversa', 'nome', 'tipo', 'nome', 'ouvir', 'pergunta', 'resposta', 'nome_prox'],
         'upload_folder' => '/chatbox/chatbox',
         'uploads' => [
-            'banner' => [
-                'count' => 1,
-                'type' => 'image',
-            ],
-            'images' => [
+            'file' => [
                 'count' => 10,
-                'type' => 'image',
+                'type' => 'file',
             ],
         ],
         'casts' => [
-            'banner' => 'array',
-            'images' => 'array',
+            'file' => 'array',
         ],
         'encrypt' => ['id'],
-        'revision' => ['name', 'title'],
-        'perchatbox' => '20',
+        'revision' => ['conversa', 'nome'],
+        'perChatbox' => '20',
         'search' => [
 
-            'name' => 'like',
-            'title' => 'like',
-            'heading' => 'like',
-            'slug' => 'like',
-            'order' => 'like',
+            'conversa' => 'like',
+            'nome' => 'like',
         ],
     ],
 ];

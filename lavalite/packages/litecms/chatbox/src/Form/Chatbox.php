@@ -56,7 +56,6 @@ class Chatbox
             'tabs' => [
                 'main' => 'Main',
                 'meta' => "Meta",
-                'image' => "Images",
             ],
             'fields' => [
                 'heading' => [
@@ -74,7 +73,7 @@ class Chatbox
 
                     ],
                 ],
-                'meta_title' => [
+                'conversa' => [
                     "type" => 'text',
                     "label" => "",
                     "alt" => "",
@@ -87,21 +86,7 @@ class Chatbox
                         "input" => 'b',
                     ],
                 ],
-                'name' => [
-                    "type" => 'text',
-                    "label" => "",
-                    "alt" => "",
-                    "label" => "",
-                    "tab" => "main",
-                    "section" => "first",
-                    "class" => [
-                        'wrapper' => "",
-                        "label" => 'a',
-                        "input" => 'b',
-
-                    ],
-                ],
-                'slug' => [
+                'nome' => [
                     "type" => 'text',
                     "label" => "",
                     "alt" => "",
@@ -115,7 +100,7 @@ class Chatbox
 
                     ],
                 ],
-                'order' => [
+                'ouvir' => [
                     "type" => 'text',
                     "label" => "",
                     "alt" => "",
@@ -129,21 +114,7 @@ class Chatbox
 
                     ],
                 ],
-                'view' => [
-                    "type" => 'text',
-                    "label" => "",
-                    "alt" => "",
-                    "label" => "",
-                    "tab" => "meta",
-                    "section" => "first",
-                    "class" => [
-                        'wrapper' => "",
-                        "label" => 'a',
-                        "input" => 'b',
-
-                    ],
-                ],
-                'compile' => [
+                'pergunta' => [
                     "type" => 'text',
                     "label" => "",
                     "alt" => "",
@@ -157,7 +128,7 @@ class Chatbox
 
                     ],
                 ],
-                'status' => [
+                'resposta' => [
                     "type" => 'text',
                     "label" => "",
                     "alt" => "",
@@ -171,7 +142,21 @@ class Chatbox
 
                     ],
                 ],
-                'upload_folder' => [
+                'nome_prox' => [
+                    "type" => 'text',
+                    "label" => "",
+                    "alt" => "",
+                    "label" => "",
+                    "tab" => "main",
+                    "section" => "first",
+                    "class" => [
+                        'wrapper' => "",
+                        "label" => 'a',
+                        "input" => 'b',
+
+                    ],
+                ],
+                'file' => [
                     "type" => 'text',
                     "label" => "",
                     "alt" => "",
@@ -199,12 +184,14 @@ class Chatbox
 
                     ],
                 ],
-                'meta_keyword' => [
+                
+                //Tipo select
+                'tipo' => [
                     "type" => 'text',
                     "label" => "",
                     "alt" => "",
                     "label" => "",
-                    "tab" => "main",
+                    "tab" => "meta",
                     "section" => "first",
                     "class" => [
                         'wrapper' => "",
@@ -213,12 +200,14 @@ class Chatbox
 
                     ],
                 ],
-                'meta_description' => [
+                
+                //Tipo select
+                'validar' => [
                     "type" => 'text',
                     "label" => "",
                     "alt" => "",
                     "label" => "",
-                    "tab" => "main",
+                    "tab" => "meta",
                     "section" => "first",
                     "class" => [
                         'wrapper' => "",
@@ -226,21 +215,7 @@ class Chatbox
                         "input" => 'b',
 
                     ],
-                ],
-                'abstract' => [
-                    "type" => 'text',
-                    "label" => "",
-                    "alt" => "",
-                    "label" => "",
-                    "tab" => "main",
-                    "section" => "first",
-                    "class" => [
-                        'wrapper' => "",
-                        "label" => 'a',
-                        "input" => 'b',
-
-                    ],
-                ],
+                ]
             ],
         ]
         );

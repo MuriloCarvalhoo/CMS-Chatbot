@@ -1,7 +1,7 @@
 <div class="app-list-wrap">
     <div class="app-list-inner">
         <div class="app-list-header d-flex align-items-center justify-content-between">
-            <h3>{{__('Chatbox')}}</h3>
+            <h3>{{__('Chatboxs')}}</h3>
             <div class="header-search">
                 <input type="search" class="form-control" placeholder="{{__('Search')}}..." id="app-search">
                 <span class="search-btn"><i class="las la-search"></i></span>

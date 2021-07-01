@@ -45,7 +45,7 @@ class ChatboxResourceController extends ResourceController
         if ($request->ajax()) {
             $view = 'chatbox::chatbox.more';
         }
-        return $this->response->setMetaTitle(trans('chatbox::chatbox.names'))
+        return $this->response->setMetaTitle(trans('chatbox::chatbox.conversa'))
             ->view($view)
             ->data(compact('data', 'meta'))
             ->output();
@@ -60,7 +60,7 @@ class ChatboxResourceController extends ResourceController
      *
      * @return Response
      */
-    public function show(ChatboxRequest $request, chatbox $data)
+    public function show(ChatboxRequest $request, Chatbox $data)
     {
 
         if ($data->exists) {
@@ -70,7 +70,7 @@ class ChatboxResourceController extends ResourceController
         }
 
         return $this->response
-            ->setMetaTitle(trans('app.view') . ' ' . trans('chatbox::chatbox.name'))
+            ->setMetaTitle(trans('app.view') . ' ' . trans('chatbox::chatbox.conversa'))
             ->data(compact('data'))
             ->view($view)
             ->output();
@@ -88,10 +88,11 @@ class ChatboxResourceController extends ResourceController
 
         $data = $this->repository->newInstance([]);
         return $this->response
-            ->setMetaTitle(trans('app.new') . ' ' . trans('chatbox::chatbox.name'))
+            ->setMetaTitle(trans('app.new') . ' ' . trans('chatbox::chatbox.conversa'))
             ->view('chatbox::chatbox.create', true)
             ->data(compact('data'))
-            ->output();
+            ->output();               
+        
     }
 
     /**
@@ -111,7 +112,7 @@ class ChatboxResourceController extends ResourceController
                 ->setPresenter(\Litecms\chatbox\Repositories\Presenter\ChatboxShowPresenter::class)
                 ->create($attribute);
             $data = current($data);
-            return $this->response->message(trans('messages.success.created', ['Module' => trans('chatbox::chatbox.name')]))
+            return $this->response->message(trans('messages.success.created', ['Module' => trans('chatbox::chatbox.conversa')]))
                 ->code(204)
                 ->status('success')
                 ->data(compact('data'))
@@ -138,7 +139,7 @@ class ChatboxResourceController extends ResourceController
      */
     public function edit(ChatboxRequest $request, Chatbox $data)
     {
-        return $this->response->setMetaTitle(trans('app.edit') . ' ' . trans('chatbox::chatbox.name'))
+        return $this->response->setMetaTitle(trans('app.edit') . ' ' . trans('chatbox::chatbox.conversa'))
             ->view('chatbox::chatbox.edit')
             ->data(compact('data'))
             ->output();
@@ -161,7 +162,7 @@ class ChatboxResourceController extends ResourceController
                 ->update($attribute, $chatbox->getRouteKey());
             $data = current($data);
             return $this->response
-                ->message(trans('messages.success.updated', ['Module' => trans('chatbox::chatbox.name')]))
+                ->message(trans('messages.success.updated', ['Module' => trans('chatbox::chatbox.conversa')]))
                 ->code(204)
                 ->data(compact('data'))
                 ->status('success')
@@ -191,7 +192,7 @@ class ChatboxResourceController extends ResourceController
         try {
 
             $chatbox->delete();
-            return $this->response->message(trans('messages.success.deleted', ['Module' => trans('chatbox::chatbox.name')]))
+            return $this->response->message(trans('messages.success.deleted', ['Module' => trans('chatbox::chatbox.conversa')]))
                 ->code(202)
                 ->status('success')
                 ->url(guard_url('chatbox/chatbox/'. $chatbox->getRouteKey()))
@@ -226,7 +227,7 @@ class ChatboxResourceController extends ResourceController
                 $this->repository->delete($ids);
             }
 
-            return $this->response->message(trans('messages.success.deleted', ['Module' => trans('chatbox::chatbox.name')]))
+            return $this->response->message(trans('messages.success.deleted', ['Module' => trans('chatbox::chatbox.conversa')]))
                 ->status("success")
                 ->code(202)
                 ->url(guard_url('chatbox/chatbox'))
@@ -256,7 +257,7 @@ class ChatboxResourceController extends ResourceController
             $ids = hashids_decode($request->input('ids'));
             $this->repository->restore($ids);
 
-            return $this->response->message(trans('messages.success.restore', ['Module' => trans('chatbox::chatbox.name')]))
+            return $this->response->message(trans('messages.success.restore', ['Module' => trans('chatbox::chatbox.conversa')]))
                 ->status("success")
                 ->code(202)
                 ->url(guard_url('chatbox/chatbox'))

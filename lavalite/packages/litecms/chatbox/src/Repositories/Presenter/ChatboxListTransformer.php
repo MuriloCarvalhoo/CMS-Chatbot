@@ -10,15 +10,15 @@ class ChatboxListTransformer extends TransformerAbstract
     {
         return [
             'id'      => $chatbox->getRouteKey(),
-            'slug'    => $chatbox->slug,
-            'url'     => $chatbox->slug . '.html',
-            'name'    => $chatbox->name,
-            'heading' => $chatbox->heading,
-            'title'   => $chatbox->title,
-            'keyword' => $chatbox->keyword,
-            'status'  => $chatbox->status,
-            'category'  => $chatbox->category,
-            'order'   => $chatbox->order,
+            'conversa'    => $chatbox->conversa,
+            'tipo'     => $chatbox->tipo,
+            'nome'    => $chatbox->nome,
+            'ouvir' => $chatbox->ouvir,
+            'validar'   => $chatbox->validar,
+            'pergunta' => $chatbox->pergunta,
+            'resposta'  => $chatbox->resposta,
+            'nome_prox'  => $chatbox->nome_prox,
+            'file'   => $chatbox->file,
         ];
     }
 }

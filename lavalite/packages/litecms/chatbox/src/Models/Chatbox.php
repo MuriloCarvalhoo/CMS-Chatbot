@@ -29,23 +29,35 @@ class Chatbox extends Model
     //  */
     public function setNameAttribute($value)
     {
-        $this->attributes['name'] = $value;
-
-        if (empty($this->attributes['title'])) {
-            $this->attributes['title'] = $value;
+        if (empty($this->attributes['conversa'])) {
+            $this->attributes['conversa'] = $value;
         }
 
-        if (empty($this->attributes['meta_title'])) {
-            $this->attributes['meta_title'] = $value;
+        if (empty($this->attributes['tipo'])) {
+            $this->attributes['tipo'] = $value;
+        }
+        if (empty($this->attributes['nome'])) {
+            $this->attributes['nome'] = $value;
+        }
+        if (empty($this->attributes['ouvir'])) {
+            $this->attributes['ouvir'] = $value;
+        }
+        if (empty($this->attributes['validar'])) {
+            $this->attributes['validar'] = $value;
+        }
+        if (empty($this->attributes['pergunta'])) {
+            $this->attributes['pergunta'] = $value;
+        }
+        if (empty($this->attributes['resposta'])) {
+            $this->attributes['resposta'] = $value;
+        }
+        if (empty($this->attributes['nome_prox'])) {
+            $this->attributes['nome_prox'] = $value;
+        }
+        if (empty($this->attributes['file'])) {
+            $this->attributes['file'] = $value;
         }
 
-        if (empty($this->attributes['heading'])) {
-            $this->attributes['heading'] = $value;
-        }
-
-        if (empty($this->attributes['sub_heading'])) {
-            $this->attributes['sub_heading'] = $value;
-        }
 
     }
 

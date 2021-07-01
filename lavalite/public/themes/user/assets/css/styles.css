@@ -3697,6 +3697,12 @@ div.dataTables_wrapper div.dataTables_filter label {
     flex-direction: column;
     justify-content: inherit;
 }
+
+.upload-wraper{
+    width: 100px;
+    height: 100px;
+}
+
 @media (min-width:576px) {
     .card-group>.card:first-child {
         border-top-right-radius: 0;

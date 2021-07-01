@@ -1,7 +1,7 @@
 <div class="app-entry-form-wrap">
     <div class="app-sec-title app-sec-title-with-icon app-sec-title-with-action">
         <i class="bi bi-chat-dots app-sec-title-icon"></i>
-        <h2>{{__('Show')}} {!!$data->conversa!!}</h2>
+        <h2>{{__('Show')}} {!!$data->name!!}</h2>
         <div class="actions">
             <button type="button" class="btn btn-with-icon btn-link  btn-outline" data-action='EDIT'
                 data-load-to="#app-entry" data-url="{{guard_url('chatbox/chatbox')}}/{!!$data->getRouteKey()!!}/edit"><i

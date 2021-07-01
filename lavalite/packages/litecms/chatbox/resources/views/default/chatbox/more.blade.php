@@ -3,11 +3,11 @@
     <div class="app-info" data-action='SHOW' data-load-to="#app-entry"
         data-url="{{guard_url('chatbox/chatbox')}}/{{$value['id']}}">
         <input type="checkbox" name="tasks_list" id="task_{{$value['id']}}">
-        <label class="app-project-name bg-secondary" for="task_{{$value['id']}}">{{$value['conversa'][0]}}</label>
-        <h3>{{$value['conversa']}}</h3>
+        <label class="app-project-name bg-secondary" for="task_{{$value['id']}}">{{$value['name'][0]}}</label>
+        <h3>{{$value['name']}}</h3>
         <div class="app-metas">
-            <p>{{$value['tipo']}}</p>
-            <span class="badge badge-status in-progress">{{$value['nome']}}</span>
+            <p>{{$value['category']}}</p>
+            <span class="badge badge-status in-progress">{{$value['status']}}</span>
         </div>
     </div>
     <div class="app-actions">

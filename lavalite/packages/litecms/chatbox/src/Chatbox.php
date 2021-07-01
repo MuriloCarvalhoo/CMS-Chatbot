@@ -38,13 +38,13 @@ class Chatbox
     }
 
     /**
-     * @param int $perchatbox
+     * @param int $perChatbox
      *
      * @return mixed
      */
-    public function gadget($perchatbox = 10)
+    public function gadget($perChatbox = 10)
     {
-        $data['chatbox'] = $this->model->paginate($perchatbox);
+        $data['chatbox'] = $this->model->paginate($perChatbox);
 
         return View::make('chatbox::admin.chatbox.gadget', $data);
     }
