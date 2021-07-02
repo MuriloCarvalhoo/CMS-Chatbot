@@ -7,7 +7,7 @@ Route::prefix('{guard}/page')->group(function () {
 // Public routes for pages
 Route::get('/{slug}.html', 'PagePublicController@getPage');
 
-if (Trans::isMultilingual()) {
+/*if (Trans::isMultilingual()) {
     Route::group(
         [
             'prefix' => '{trans}',
@@ -22,4 +22,4 @@ if (Trans::isMultilingual()) {
             Route::get('/{slug}.html', 'PagePublicController@getPage');
         }
     );
-}
+}*/

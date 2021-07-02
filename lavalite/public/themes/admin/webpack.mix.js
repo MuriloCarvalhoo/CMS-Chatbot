@@ -22,6 +22,12 @@ mix.copy(
     "./assets/dist/js/jquery.min.js"
 );
 
+mix.copy(
+    "./node_modules/handlebars/dist/handlebars.js",
+    "./assets/dist/js/handlebars.js"
+);
+
+
 mix.js("resources/js/app.js", "assets/dist/js")
     .extract([
         "bootstrap",
@@ -29,7 +35,7 @@ mix.js("resources/js/app.js", "assets/dist/js")
         "sweetalert",
         "dropzone",
         "timeago",
-        "jquery-validation"
+        "jquery-validation",
     ])
     .sass("resources/sass/app.scss", "assets/dist/css");
 

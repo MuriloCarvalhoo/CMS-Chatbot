@@ -103,6 +103,7 @@ $(function () {
       return app.makeRequest($tag.data("method"), $tag.data("href"));
 
     app.load($tag.data("load-to"), $tag.data("href"));
+
   });
 
 
@@ -433,9 +434,4 @@ $(window)
     });
   })
   .scroll();
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
-
-//Formulario Dinamico Chatbox
 

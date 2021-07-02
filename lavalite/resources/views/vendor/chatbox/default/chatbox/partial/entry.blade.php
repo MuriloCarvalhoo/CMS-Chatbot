@@ -4,112 +4,31 @@
             <div class="app-entry-form-section" id="basic">
                 <div class="section-title">Conversa Chatbox</div>
                 <div class="row">
+                    @php
+                    $include = @include('chatbox::chatbox.partial.entry')    
+                    @endphp
                     <div class="col-12">
                         {!! Form::text('conversa')
                         -> label('Nome da conversa')
                         -> required()
                         -> placeholder('Digite um nome para conversa')
                         !!}
-
                     </div>
+                    
+                    <div class="col-12 ">
+                        <button class="btn btn-success btn-sm" type="button" id="addFunc">Add Funcao</button>
+                    </div>
+                    <div class="col-12 ">
+                        <button class="btn btn-danger btn-sm" type="button" id="addFile">Add File</button>
+                    </div>
+
                 </div>
             </div>    
-
-            <div class="addFunc" id="addFunc"></div>
-
-            <!--isso nao vai existir-->
-            <div class="app-entry-form-section" id="meta">
-
-                <div class="row">
-                    <div class="col-auto">
-                        
-                        {!! Form::text('tipo[]')
-                        -> label('Tipo')
-                        -> value('Pergunta')
-                        ->setAttribute('disabled', 'true')
-                        !!}
-
-
-                        {!! Form::text('nome[]')
-                        -> label('Nome da função')
-                        -> placeholder('Ex: "email"')
-                        !!}
-                    </div>
-                    <div class="col-auto">
-
-                        {!! Form::text('ouvir')
-                        -> label('Ouvir: ')
-                        -> placeholder('Ex: "Quero o meu extrato"')
-                        !!}
-
-
-                        {!! Form::select('validar')
-                        -> options(['nv' => 'Não Validar', 'cpf' => 'CPF', 'email' => 'E-mail', 'celular' => 'Celular'])
-                        -> label('Validação')
-                        !!}
-                    </div>
-                    <div class="col-auto">
-
-                        {!! Form::text('pergunta')
-                        -> label('Pergunta: ')
-                        -> placeholder('Ex: "Qual seu email"')
-                        !!}
-
-                        {!! Form::text('resposta')
-                        -> label('Resposta: ')
-                        -> placeholder('Ex: "Seu e-mail é "')
-                        !!}
-                    </div>
-                    <div class="col-auto">                        
-
-
-                        {!! Form::text('nome_prox')
-                        -> label('Nome da proxima funçao: ')
-                        -> placeholder('Ex: "cpf"')
-                        !!}
-
-                        <div class="app-entry-form-section" id="file">
-                            <div class="section-title">Arquivos</div>
-                            <div class="row">
-                                @if ($mode == 'create')
-                                <div class="form-group">
-                                    <label for="file" class="control-label col-lg-12 col-sm-12 text-left">
-                                        Enviar arquivo...
-                                    </label>
-                                    <div class='col-12'>
-                                        {!! $data->files('file')
-                                        ->url($data->getUploadUrl('file'))
-                                        ->uploader()!!}
-                                    </div>
-                                </div>
-                                @elseif ($mode == 'edit')
-                                <div class="form-group">
-                                    <label for="file" class="control-label col-lg-12 col-sm-12 text-left">
-                                        {{trans('chatbox::chatbox.label.file') }}
-                                    </label>
-                                    <div class='col-12'>
-                                        {!! $data->files('file')
-                                        ->url($data->getUploadUrl('file'))
-                                        ->uploader()!!}
-                                    </div>
-                                </div>
-                                @elseif ($mode == 'show')
-                                <div class='col-12'>
-                                    {!! $data->files('file') !!}
-                                </div>
-                                @endif
-                            </div>
-                            {!! Form::hidden('file') !!}
-                        </div>
-
-                    </div>
-
-                    </div>
-                </div>
-            </div>
+            <div class="showFunc" id="showFunc"></div>
         </div>
     </div>
 </div>
 <br />
 <br />
 <br />
+
