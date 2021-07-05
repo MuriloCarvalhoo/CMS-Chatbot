@@ -14,3 +14,6 @@
 [Fri Jul 02 13:36:59.250030 2021] [core:warn] [pid 22:tid 140404002016192] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
 [Fri Jul 02 13:36:59.253996 2021] [mpm_event:notice] [pid 22:tid 140404002016192] AH00489: Apache/2.4.29 (Ubuntu) OpenSSL/1.1.1 configured -- resuming normal operations
 [Fri Jul 02 13:36:59.254020 2021] [core:notice] [pid 22:tid 140404002016192] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Mon Jul 05 13:34:56.640683 2021] [core:warn] [pid 23:tid 140166501829568] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Jul 05 13:34:56.677887 2021] [mpm_event:notice] [pid 23:tid 140166501829568] AH00489: Apache/2.4.29 (Ubuntu) OpenSSL/1.1.1 configured -- resuming normal operations
+[Mon Jul 05 13:34:56.677918 2021] [core:notice] [pid 23:tid 140166501829568] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'

@@ -3,6 +3,7 @@
 Route::prefix('{guard}/chatbox')->group(function () {
     Route::get('chatbox/form/{element}/{grouped?}', 'ChatboxResourceController@form');
     Route::resource('chatbox', 'ChatboxResourceController');
+
 });
 // Public routes for chatbox
 Route::get('/{slug}.html', 'ChatboxPublicController@getChatbox');

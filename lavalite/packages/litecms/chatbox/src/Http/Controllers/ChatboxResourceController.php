@@ -286,4 +286,5 @@ class ChatboxResourceController extends ResourceController
         $form = new \Litecms\Chatbox\Form\Chatbox();
         return $form->form($element, true);
     }
+
 }

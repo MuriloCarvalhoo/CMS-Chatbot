@@ -4,6 +4,8 @@ use App\Http\Controllers\PublicController;
 use App\Http\Controllers\BotManController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\View;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -86,17 +88,6 @@ Route::any('dinamica/{id}/update', 'DinamicaController@update')->name('dinamica.
 Route::get('dinamica/{id}/show', 'DinamicaController@show')->name('dinamica.show');
 Route::get('dinamica/{id}/destroy', 'DinamicaController@destroy')->name('dinamica.destroy');
 Route::any('dinamica/gerar', 'DinamicaController@gerarClasse')->name('dinamica.gerar');
-
-//Rota Chatbot
-//Route::get('chatbot', 'ChatboxController@index')->name('chatbot.index');
-//Route::get('chatbot/search', 'ChatboxController@search')->name('chatbot.search');
-//Route::get('chatbot/create', 'ChatboxController@create')->name('chatbot.create');
-//Route::any('chatbot/store', 'ChatboxController@store')->name('chatbot.store');
-//Route::get('chatbot/{id}/edit', 'ChatboxController@edit')->name('chatbot.edit');
-//Route::any('chatbot/{id}/update', 'ChatboxController@update')->name('chatbot.update');
-//Route::get('chatbot/{id}/show', 'ChatboxController@show')->name('chatbot.show');
-//Route::get('chatbot/{id}/destroy', 'ChatboxController@destroy')->name('chatbot.destroy');
-//Route::any('chatbot/gerar', 'ChatboxController@gerarClasse')->name('chatbot.gerar');
 
 
 Route::group(
