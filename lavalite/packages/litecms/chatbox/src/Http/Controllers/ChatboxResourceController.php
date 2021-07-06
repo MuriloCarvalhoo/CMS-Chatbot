@@ -70,7 +70,7 @@ class ChatboxResourceController extends ResourceController
         }
 
         return $this->response
-            ->setMetaTitle(trans('app.view') . ' ' . trans('chatbox::chatbox.conversa'))
+            ->setMetaTitle('Chatbox Criar Conversa')
             ->data(compact('data'))
             ->view($view)
             ->output();
@@ -88,7 +88,7 @@ class ChatboxResourceController extends ResourceController
 
         $data = $this->repository->newInstance([]);
         return $this->response
-            ->setMetaTitle(trans('app.new') . ' ' . trans('chatbox::chatbox.conversa'))
+            ->setMetaTitle('Chatbox Criar Conversa')
             ->view('chatbox::chatbox.create', true)
             ->data(compact('data'))
             ->output();               

@@ -64,7 +64,14 @@ class BotManController extends Controller
             $bot->reply($message);
         });
 
-
+        $botman->hears('stop', function(BotMan $bot) {
+            $bot->reply('stopped');
+        })->stopsConversation();
+        
+        $botman->hears('pause', function(BotMan $bot) {
+            $bot->reply('stopped');
+        })->skipsConversation();
+        
         $botman->listen();
     }
 

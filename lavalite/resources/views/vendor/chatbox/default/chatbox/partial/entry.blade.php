@@ -19,6 +19,9 @@
                             <option value="desabilitado">Desabilitado</option>
                             <option value="perguntaUnica">Pergunta</option>
                             <option value="respostaUnica">Resposta</option>
+                            <option value="anexo">Anexo</option>
+                            <option value="imagem">Imagem</option>
+
                         </select>
                     </div>                    
                                     
@@ -28,7 +31,7 @@
             <div class="showFunc" id="showFunc"></div>
             
         </div>
-        <div class="app-entry-form-section" id="file">
+        <div class="app-entry-form-section m-2" id="file">
             <div class="section-title">Arquivos</div>
             <div class="row">
                 @if ($mode == 'create')

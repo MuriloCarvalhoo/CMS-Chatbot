@@ -437,61 +437,71 @@ $(window)
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 
 //Formulario Dinamico Chatbox
+
+//HTML para cada tipo de função
 var buttonDelete = " type=\"button\" class=\"bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded\" > Remover </button>";
-var formText = "<div class=\"app-entry-form-section\" id=\"meta\"><div class=\"row\"><div class=\"col-auto\"><div class=\"form-group\"><label for=\"tipo[]\" class=\"control-label\">Tipo</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"tipo[]\" id=\"tipo\" value=\"Pergunta\"></div><div class=\"form-group\"><label for=\"nome[]\" class=\"control-label\">Nome da função</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"nome\" id=\"nome\" placeholder=\"Ex: 'email'\"></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"ouvir[]\" class=\"control-label\">Ouvir:</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"ouvir[]\" id=\"ouvir\" placeholder=\"Ex: 'Quero o meu extrato'\"></div><div class=\"form-group\"><label for=\"validar[]\" class=\"control-label\">Validação</label><select type=\"text\" class=\"form-control\" disabled=\"true\" name=\"validar[]\" id=\"validar\"><option value=\"naovalidar\">Não Validar</option><option value=\"cpf\">CPF</option><option value=\"email\">E-mail</option><option value=\"celular\">Celular</option></select></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"pergunta[]\" class=\"control-label\">Pergunta:</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"pergunta[]\" id=\"pergunta\" placeholder=\"Ex: 'Qual o seu email ? '\"></div><div class=\"form-group\"><label for=\"resposta[]\" class=\"control-label\">Resposta:</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"resposta[]\" id=\"resposta\" placeholder=\"Ex: 'Seu e-mail é '\"></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"nome_prox[]\" class=\"control-label\">Nome da proxima função:</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"nome_prox[]\" id=\"nome_prox\" placeholder=\"Ex: 'cpf'\"></div></div></div></div>";
-var formPerguntaUnica = "<div class=\"app-entry-form-section\" id=\"meta\"><div class=\"row\"><div class=\"col-auto\"><div class=\"form-group\"><label for=\"tipo[]\" class=\"control-label\">Tipo</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"tipo[]\" id=\"tipo\" value=\"Pergunta\"></div><div class=\"form-group\"><label for=\"nome[]\" class=\"control-label\">Nome da função</label><input type=\"text\" class=\"form-control\"  name=\"nome\" id=\"nome\" placeholder=\"Ex: 'email'\"></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"ouvir[]\" class=\"control-label\">Ouvir:</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"ouvir[]\" id=\"ouvir\" placeholder=\"Ex: 'Quero o meu extrato'\"></div><div class=\"form-group\"><label for=\"validar[]\" class=\"control-label\">Validação</label><select type=\"text\" class=\"form-control\"  name=\"validar[]\" id=\"validar\"><option value=\"naovalidar\">Não Validar</option><option value=\"cpf\">CPF</option><option value=\"email\">E-mail</option><option value=\"celular\">Celular</option></select></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"pergunta[]\" class=\"control-label\">Pergunta:</label><input type=\"text\" class=\"form-control\"  name=\"pergunta[]\" id=\"pergunta\" placeholder=\"Ex: 'Qual o seu email ? '\"></div><div class=\"form-group\"><label for=\"resposta[]\" class=\"control-label\">Resposta:</label><input type=\"text\" class=\"form-control\"  name=\"resposta[]\" id=\"resposta\" placeholder=\"Ex: 'Seu e-mail é '\"></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"nome_prox[]\" class=\"control-label\">Nome da proxima função:</label><input type=\"text\" class=\"form-control\"  name=\"nome_prox[]\" id=\"nome_prox\" placeholder=\"Ex: 'cpf'\"></div></div></div></div>";
-var formRespostaUnica = "<div class=\"app-entry-form-section\" id=\"meta\"><div class=\"row\"><div class=\"col-auto\"><div class=\"form-group\"><label for=\"tipo[]\" class=\"control-label\">Tipo</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"tipo[]\" id=\"tipo\" value=\"Pergunta\"></div><div class=\"form-group\"><label for=\"nome[]\" class=\"control-label\">Nome da função</label><input type=\"text\" class=\"form-control\"  name=\"nome[]\" id=\"nome\" placeholder=\"Ex: 'email'\"></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"ouvir[]\" class=\"control-label\">Ouvir:</label><input type=\"text\" class=\"form-control\" name=\"ouvir[]\" id=\"ouvir\" placeholder=\"Ex: 'Quero o meu extrato'\"></div><div class=\"form-group\"><label for=\"validar[]\" class=\"control-label\">Validação</label><select type=\"text\" class=\"form-control\" disabled=\"true\" name=\"validar[]\" id=\"validar\"><option value=\"naovalidar\">Não Validar</option><option value=\"cpf\">CPF</option><option value=\"email\">E-mail</option><option value=\"celular\">Celular</option></select></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"pergunta[]\" class=\"control-label\">Pergunta:</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"pergunta[]\" id=\"pergunta\" placeholder=\"Ex: 'Qual o seu email ? '\"></div><div class=\"form-group\"><label for=\"resposta[]\" class=\"control-label\">Resposta:</label><input type=\"text\" class=\"form-control\" name=\"resposta[]\" id=\"resposta\" placeholder=\"Ex: 'Seu e-mail é '\"></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"nome_prox[]\" class=\"control-label\">Nome da proxima função:</label><input type=\"text\" class=\"form-control\" name=\"nome_prox[]\" id=\"nome_prox\" placeholder=\"Ex: 'cpf'\"></div></div></div></div>";
+var formText = "<div class=\"app-entry-form-section m-2\" id=\"meta\"><div class=\"row\"><div class=\"col-auto\"><div class=\"form-group\"><label for=\"tipo[]\" class=\"control-label\">Tipo</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"tipo[]\" id=\"tipo\" value=\"Desabilitado\"></div><div class=\"form-group\"><label for=\"nome[]\" class=\"control-label\">Nome da função</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"nome\" id=\"nome\" placeholder=\"Ex: 'email'\"></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"ouvir[]\" class=\"control-label\">Ouvir:</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"ouvir[]\" id=\"ouvir\" placeholder=\"Ex: 'Quero o meu extrato'\"></div><div class=\"form-group\"><label for=\"validar[]\" class=\"control-label\">Validação</label><select type=\"text\" class=\"form-control\" disabled=\"true\" name=\"validar[]\" id=\"validar\"><option value=\"naovalidar\">Não Validar</option><option value=\"cpf\">CPF</option><option value=\"email\">E-mail</option><option value=\"celular\">Celular</option></select></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"pergunta[]\" class=\"control-label\">Pergunta:</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"pergunta[]\" id=\"pergunta\" placeholder=\"Ex: 'Qual o seu email ? '\"></div><div class=\"form-group\"><label for=\"resposta[]\" class=\"control-label\">Resposta:</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"resposta[]\" id=\"resposta\" placeholder=\"Ex: 'Seu e-mail é '\"></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"nome_prox[]\" class=\"control-label\">Nome da proxima função:</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"nome_prox[]\" id=\"nome_prox\" placeholder=\"Ex: 'cpf'\"></div></div></div></div>";
+var formPerguntaUnica = "<div class=\"app-entry-form-section m-2\" id=\"meta\"><div class=\"row\"><div class=\"col-auto\"><div class=\"form-group\"><label for=\"tipo[]\" class=\"control-label\">Tipo</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"tipo[]\" id=\"tipo\" value=\"Pergunta\"></div><div class=\"form-group\"><label for=\"nome[]\" class=\"control-label\">Nome da função</label><input type=\"text\" class=\"form-control\"  name=\"nome\" id=\"nome\" placeholder=\"Ex: 'email'\"></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"ouvir[]\" class=\"control-label\">Ouvir:</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"ouvir[]\" id=\"ouvir\" placeholder=\"Ex: 'Quero o meu extrato'\"></div><div class=\"form-group\"><label for=\"validar[]\" class=\"control-label\">Validação</label><select type=\"text\" class=\"form-control\"  name=\"validar[]\" id=\"validar\"><option value=\"naovalidar\">Não Validar</option><option value=\"cpf\">CPF</option><option value=\"email\">E-mail</option><option value=\"celular\">Celular</option></select></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"pergunta[]\" class=\"control-label\">Pergunta:</label><input type=\"text\" class=\"form-control\"  name=\"pergunta[]\" id=\"pergunta\" placeholder=\"Ex: 'Qual o seu email ? '\"></div><div class=\"form-group\"><label for=\"resposta[]\" class=\"control-label\">Resposta:</label><input type=\"text\" class=\"form-control\"  name=\"resposta[]\" id=\"resposta\" placeholder=\"Ex: 'Seu e-mail é '\"></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"nome_prox[]\" class=\"control-label\">Nome da proxima função:</label><input type=\"text\" class=\"form-control\"  name=\"nome_prox[]\" id=\"nome_prox\" placeholder=\"Ex: 'cpf'\"></div></div></div></div>";
+var formRespostaUnica = "<div class=\"app-entry-form-section m-2\" id=\"meta\"><div class=\"row\"><div class=\"col-auto\"><div class=\"form-group\"><label for=\"tipo[]\" class=\"control-label\">Tipo</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"tipo[]\" id=\"tipo\" value=\"Resposta\"></div><div class=\"form-group\"><label for=\"nome[]\" class=\"control-label\">Nome da função</label><input type=\"text\" class=\"form-control\"  name=\"nome[]\" id=\"nome\" placeholder=\"Ex: 'email'\"></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"ouvir[]\" class=\"control-label\">Ouvir:</label><input type=\"text\" class=\"form-control\" name=\"ouvir[]\" id=\"ouvir\" placeholder=\"Ex: 'Quero o meu extrato'\"></div><div class=\"form-group\"><label for=\"validar[]\" class=\"control-label\">Validação</label><select type=\"text\" class=\"form-control\" disabled=\"true\" name=\"validar[]\" id=\"validar\"><option value=\"naovalidar\">Não Validar</option><option value=\"cpf\">CPF</option><option value=\"email\">E-mail</option><option value=\"celular\">Celular</option></select></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"pergunta[]\" class=\"control-label\">Pergunta:</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"pergunta[]\" id=\"pergunta\" placeholder=\"Ex: 'Qual o seu email ? '\"></div><div class=\"form-group\"><label for=\"resposta[]\" class=\"control-label\">Resposta:</label><input type=\"text\" class=\"form-control\" name=\"resposta[]\" id=\"resposta\" placeholder=\"Ex: 'Seu e-mail é '\"></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"nome_prox[]\" class=\"control-label\">Nome da proxima função:</label><input type=\"text\" class=\"form-control\" name=\"nome_prox[]\" id=\"nome_prox\" placeholder=\"Ex: 'cpf'\"></div></div></div></div>";
+var formAnexo = "<div class=\"app-entry-form-section m-2\" id=\"meta\"><div class=\"row\"><div class=\"col-auto\"><div class=\"form-group\"><label for=\"tipo[]\" class=\"control-label\">Tipo</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"tipo[]\" id=\"tipo\" value=\"Anexo\"></div><div class=\"form-group\"><label for=\"nome[]\" class=\"control-label\">Nome da função</label><input type=\"text\" class=\"form-control\" name=\"nome\" id=\"nome\" placeholder=\"Ex: 'email'\"></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"ouvir[]\" class=\"control-label\">Ouvir:</label><input type=\"text\" class=\"form-control\" name=\"ouvir[]\" id=\"ouvir\" placeholder=\"Ex: 'Quero o meu extrato'\"></div><div class=\"form-group\"><label for=\"validar[]\" class=\"control-label\">Validação</label><select type=\"text\" class=\"form-control\" disabled=\"true\" name=\"validar[]\" id=\"validar\"><option value=\"naovalidar\">Não Validar</option><option value=\"cpf\">CPF</option><option value=\"email\">E-mail</option><option value=\"celular\">Celular</option></select></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"pergunta[]\" class=\"control-label\">Pergunta:</label><input type=\"text\" class=\"form-control\" name=\"pergunta[]\" id=\"pergunta\" placeholder=\"Ex: 'Qual o seu email ? '\"></div><div class=\"form-group\"><label for=\"resposta[]\" class=\"control-label\">Resposta:</label><input type=\"text\" class=\"form-control\" name=\"resposta[]\" id=\"resposta\" placeholder=\"Ex: 'Seu e-mail é '\"></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"nome_prox[]\" class=\"control-label\">Nome da proxima função:</label><input type=\"text\" class=\"form-control\" name=\"nome_prox[]\" id=\"nome_prox\" placeholder=\"Ex: 'cpf'\"></div></div></div></div>";
+var formImagem = "<div class=\"app-entry-form-section m-2\" id=\"meta\"><div class=\"row\"><div class=\"col-auto\"><div class=\"form-group\"><label for=\"tipo[]\" class=\"control-label\">Tipo</label><input type=\"text\" class=\"form-control\" disabled=\"true\" name=\"tipo[]\" id=\"tipo\" value=\"Imagem\"></div><div class=\"form-group\"><label for=\"nome[]\" class=\"control-label\">Nome da função</label><input type=\"text\" class=\"form-control\" name=\"nome\" id=\"nome\" placeholder=\"Ex: 'email'\"></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"ouvir[]\" class=\"control-label\">Ouvir:</label><input type=\"text\" class=\"form-control\" name=\"ouvir[]\" id=\"ouvir\" placeholder=\"Ex: 'Quero o meu extrato'\"></div><div class=\"form-group\"><label for=\"validar[]\" class=\"control-label\">Validação</label><select type=\"text\" class=\"form-control\" disabled=\"true\" name=\"validar[]\" id=\"validar\"><option value=\"naovalidar\">Não Validar</option><option value=\"cpf\">CPF</option><option value=\"email\">E-mail</option><option value=\"celular\">Celular</option></select></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"pergunta[]\" class=\"control-label\">Pergunta:</label><input type=\"text\" class=\"form-control\" name=\"pergunta[]\" id=\"pergunta\" placeholder=\"Ex: 'Qual o seu email ? '\"></div><div class=\"form-group\"><label for=\"resposta[]\" class=\"control-label\">Resposta:</label><input type=\"text\" class=\"form-control\" name=\"resposta[]\" id=\"resposta\" placeholder=\"Ex: 'Seu e-mail é '\"></div></div><div class=\"col-auto\"><div class=\"form-group\"><label for=\"nome_prox[]\" class=\"control-label\">Nome da proxima função:</label><input type=\"text\" class=\"form-control\" name=\"nome_prox[]\" id=\"nome_prox\" placeholder=\"Ex: 'cpf'\"></div></div></div></div>";
 
 
 var file = "<div class=\"app-entry-form-section\" id=\"file\"><div class=\"section-title\">Arquivos</div><div class=\"row\"> @@if ($mode == 'create') <div class=\"form-group\"><label for=\"file\" class=\"control-label col-lg-12 col-sm-12 text-left\">Enviar arquivo...</label><div class=\"col-12\">{!!$data -> files('file') -> url($data -> getUploadUrl('file')) -> uploader()!!}</div></div>@@elseif ($mode == 'edit')<div class=\"form-group\"><label for=\"file\" class=\"control-label col-lg-12 col-sm-12 text-left\">{{ trans('chatbox::chatbox.label.file') }}</label><div class=\"col-12\">{!!$data -> files('file') -> url($data -> getUploadUrl('file')) -> uploader()!!}</div></div>@@elseif ($mode == 'show')<div class=\"col-12\">{!!$data -> files('file')!!}</div>@@endif</div>{!!Form::hidden('file') !!}</div>";
 
-
+//Adicionar o HTML da função
 $(document).on('change','#tipoPergunta',function(){
   //Receber o valor das opções de funcoes
   var value = this.options[this.selectedIndex].value;
 
   if (value == 'desabilitado'){
     $("#showFunc").append(formText);
-    $("#meta").append("<button value=\"delete-" + value + "\"" + buttonDelete).attr("id", "meta-" + value);
-    $("#meta-desabilitado i").attr("id", "delete-" + value);
+    $("#meta").append("<button" + buttonDelete).attr("id", "meta-" + value);
+    $("#meta-desabilitado button").attr("id", "delete-" + value);
 
   }
   else if (value == 'perguntaUnica'){
-    //$("#showFunc").append("<div class=\"app-entry-form-section\" id=\"meta-" + value + formPerguntaUnica);
     $("#showFunc").append(formPerguntaUnica);
-    $("#meta").append("<button value=\"delete-" + value + "\"" + buttonDelete).attr("id", "meta-" + value);
-    $("#meta-perguntaUnica i").attr("id", "delete-" + value);
+    $("#meta").append("<button" + buttonDelete).attr("id", "meta-" + value);
+    $("#meta-perguntaUnica button").attr("id", "delete-" + value);
 
   }
   else if (value == 'respostaUnica'){
-    //$("#showFunc").append("<div class=\"app-entry-form-section\" id=\"meta " + value + formRespostaUnica);
     $("#showFunc").append(formRespostaUnica);
-    $("#meta").append("<button value=\"delete-" + value + "\"" + buttonDelete).attr("id", "meta-" + value);
-    $("#meta-respostaUnica i").attr("id", "delete-" + value);
+    $("#meta").append("<button" + buttonDelete).attr("id", "meta-" + value);
+    $("#meta-respostaUnica button").attr("id", "delete-" + value);
+  }
+  else if (value == 'anexo'){
+    $("#showFunc").append(formAnexo);
+    $("#meta").append("<button" + buttonDelete).attr("id", "meta-" + value);
+    $("#meta-anexo button").attr("id", "delete-" + value);
+  }
+  else if (value == 'imagem'){
+    $("#showFunc").append(formImagem);
+    $("#meta").append("<button" + buttonDelete).attr("id", "meta-" + value);
+    $("#meta-imagem button").attr("id", "delete-" + value);
   }
 
 });
 
-/*$(document).on('click','#delete-desabilitado',function(){
-  $(this).closest('#meta-desabilitado').remove();
-  
+//Remover os forms adicionados
+$(document).on( "click", "#delete-desabilitado", function() {
+  $("#meta-desabilitado").remove();
 });
 
-$(function () {
-  $("button").click(function (ev) {
-      ev.preventDefault() // cancel form submission
-      if ($(this).attr("value") == "delete-desabilitado") {
-        $('#meta-desabilitado').remove()
-      }
-      if ($(this).attr("value") == "delete-perguntaUnica") {
-        $('#meta-perguntaUnica').remove()
-      }
-      if ($(this).attr("value") == "delete-respostaUnica") {
-        $('#meta-respostaUnica').remove()
-      }
-  });
-});*/
-
-$( "#delete-respostaUnica" ).on( "click", "button", function() {
-  $(this).remove();
+$(document).on( "click", "#delete-perguntaUnica", function() {
+  $("#meta-perguntaUnica").remove();
 });
+
+$(document).on( "click", "#delete-respostaUnica", function() {
+  $("#meta-respostaUnica").remove();
+});
+
+$(document).on( "click", "#delete-anexo", function() {
+  $("#meta-anexo").remove();
+});
+
+$(document).on( "click", "#delete-imagem", function() {
+  $("#meta-imagem").remove();
+});
+
