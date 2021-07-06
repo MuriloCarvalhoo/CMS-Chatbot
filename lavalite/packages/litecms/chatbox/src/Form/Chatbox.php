@@ -156,7 +156,7 @@ class Chatbox
 
                     ],
                 ],
-                'file' => [
+                'upload_folder' => [
                     "type" => 'text',
                     "label" => "",
                     "alt" => "",

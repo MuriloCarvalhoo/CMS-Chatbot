@@ -62,7 +62,7 @@
                     </div>
                     @elseif ($mode == 'show')
                     <div class='col-12'>
-                        {!! $data->files('banner') !!}
+                        {!! $data->files('file') !!}
                     </div>
                     <div class='col-12'>
                         {!! $data->files('file') !!}

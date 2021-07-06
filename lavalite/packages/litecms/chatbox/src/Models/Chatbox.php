@@ -54,10 +54,6 @@ class Chatbox extends Model
         if (empty($this->attributes['nome_prox'])) {
             $this->attributes['nome_prox'] = $value;
         }
-        if (empty($this->attributes['file'])) {
-            $this->attributes['file'] = $value;
-        }
-
 
     }
 

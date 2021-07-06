@@ -72,7 +72,7 @@
         
             </div>
         
-            {!!Form::hidden('file') !!}
+            {!!Form::hidden('upload_folder') !!}
         
             </div>
         </div>

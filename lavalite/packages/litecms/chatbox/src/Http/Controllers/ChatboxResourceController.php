@@ -45,7 +45,7 @@ class ChatboxResourceController extends ResourceController
         if ($request->ajax()) {
             $view = 'chatbox::chatbox.more';
         }
-        return $this->response->setMetaTitle(trans('chatbox::chatbox.conversa'))
+        return $this->response->setMetaTitle('Chatbox Criar Conversa')
             ->view($view)
             ->data(compact('data', 'meta'))
             ->output();
@@ -105,20 +105,95 @@ class ChatboxResourceController extends ResourceController
     public function store(ChatboxRequest $request)
     {
         try {
-            $attribute = $request->all();
             $attribute['user_id'] = user_id();
             $attribute['user_type'] = user_type();
-            $data = $this->repository
-                ->setPresenter(\Litecms\chatbox\Repositories\Presenter\ChatboxShowPresenter::class)
-                ->create($attribute);
-            $data = current($data);
+
+            $conversa = $request->conversa;
+            $tipo = $request->tipo;
+            $nome = $request->nome;
+            $ouvir = $request->ouvir;
+            $validar = $request->validar;
+            $pergunta = $request->pergunta;
+            $resposta = $request->resposta;
+            $nome_prox = $request->nome_prox;
+            $upload_folder = $request->upload_folder;
+
+            $count = count($request->tipo);
+
+            for($i=0; $i< $count; $i++){
+                if ($tipo[$i] == 'Pergunta'){
+                    $attribute = array(
+                        'conversa' => $conversa,
+                        'tipo' => $tipo[$i],
+                        'nome' => $nome[$i],
+                        'validar' => $validar[$i],
+                        'pergunta' => $pergunta[$i],
+                        'resposta' => $resposta[$i],
+                        'nome_prox' => $nome_prox[$i],
+                        'upload_folder' => $upload_folder[$i]
+                    );
+                }
+                if ($tipo[$i] == 'Resposta'){
+                    $attribute = array(
+                        'conversa' => $conversa,
+                        'tipo' => $tipo[$i],
+                        'ouvir' => $ouvir[$i],
+                        'nome' => $nome[$i],
+                        'resposta' => $resposta[$i],
+                        'nome_prox' => $nome_prox[$i],
+                    );
+                }
+                if ($tipo[$i] == 'Anexo'){
+                    $attribute = array(
+                        'conversa' => $conversa,
+                        'tipo' => $tipo[$i],
+                        'nome' => $nome[$i],
+                        'ouvir' => $ouvir[$i],
+                        'pergunta' => $pergunta[$i],
+                        'resposta' => $resposta[$i],
+                        'nome_prox' => $nome_prox[$i],
+                        'upload_folder' => $upload_folder[$i]                    
+                        );
+                }
+                if ($tipo[$i] == 'Imagem'){
+                    $attribute = array(
+                        'conversa' => $conversa,
+                        'tipo' => $tipo[$i],
+                        'nome' => $nome[$i],
+                        'ouvir' => $ouvir[$i],
+                        'pergunta' => $pergunta[$i],
+                        'resposta' => $resposta[$i],
+                        'nome_prox' => $nome_prox[$i],
+                        'upload_folder' => $upload_folder[$i]                    
+                        );
+                }
+
+                /*
+                Todos os request
+                $attribute = array(
+                    'conversa' => $conversa,
+                    'tipo' => $tipo[$i],
+                    'nome' => $nome[$i],
+                    'ouvir' => $ouvir[$i],
+                    'validar' => $validar[$i],
+                    'pergunta' => $pergunta[$i],
+                    'resposta' => $resposta[$i],
+                    'nome_prox' => $nome_prox[$i],
+                    'upload_folder' => $upload_folder[$i]                    
+                );*/
+                $data = $this->repository
+                    ->setPresenter(\Litecms\Chatbox\Repositories\Presenter\ChatboxShowPresenter::class)
+                    ->create($attribute);
+                $data = current($data);
+            }
+
             return $this->response->message(trans('messages.success.created', ['Module' => trans('chatbox::chatbox.conversa')]))
                 ->code(204)
                 ->status('success')
                 ->data(compact('data'))
                 ->url(guard_url('chatbox/chatbox/' . $data['id']))
                 ->redirect();
-        } catch (Exception $e) {
+            } catch (Exception $e) {
             return $this->response->message($e->getMessage())
                 ->code(400)
                 ->status('error')
@@ -126,7 +201,6 @@ class ChatboxResourceController extends ResourceController
                 ->url(guard_url('chatbox/chatbox'))
                 ->redirect();
         }
-
     }
 
     /**
@@ -139,7 +213,7 @@ class ChatboxResourceController extends ResourceController
      */
     public function edit(ChatboxRequest $request, Chatbox $data)
     {
-        return $this->response->setMetaTitle(trans('app.edit') . ' ' . trans('chatbox::chatbox.conversa'))
+        return $this->response->setMetaTitle('Chatbox Criar Conversa')
             ->view('chatbox::chatbox.edit')
             ->data(compact('data'))
             ->output();
@@ -158,7 +232,7 @@ class ChatboxResourceController extends ResourceController
         try {
             $attribute = $request->all();
             $data = $this->repository
-                ->setPresenter(\Litecms\chatbox\Repositories\Presenter\ChatboxShowPresenter::class)
+                ->setPresenter(\Litecms\Chatbox\Repositories\Presenter\ChatboxShowPresenter::class)
                 ->update($attribute, $chatbox->getRouteKey());
             $data = current($data);
             return $this->response
