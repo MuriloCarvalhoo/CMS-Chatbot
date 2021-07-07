@@ -19,7 +19,7 @@ class ChatboxShowTransformer extends TransformerAbstract
             'pergunta' => $chatbox->pergunta,
             'resposta'  => $chatbox->resposta,
             'nome_prox'  => $chatbox->nome_prox,
-            'file'   => $chatbox->file,
+            'file'  => $chatbox->file,
             'view' => 'chatbox',
             'status' => 'Show',
             'upload_folder' => $chatbox->upload_folder,

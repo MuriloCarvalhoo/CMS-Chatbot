@@ -56,6 +56,7 @@ class Chatbox
             'tabs' => [
                 'main' => 'Main',
                 'meta' => "Meta",
+                'file' => 'Files',
             ],
             'fields' => [
                 'heading' => [

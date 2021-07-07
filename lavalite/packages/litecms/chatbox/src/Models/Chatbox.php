@@ -29,6 +29,7 @@ class Chatbox extends Model
     //  */
     public function setNameAttribute($value)
     {
+        
         if (empty($this->attributes['conversa'])) {
             $this->attributes['conversa'] = $value;
         }
@@ -54,6 +55,7 @@ class Chatbox extends Model
         if (empty($this->attributes['nome_prox'])) {
             $this->attributes['nome_prox'] = $value;
         }
+
 
     }
 

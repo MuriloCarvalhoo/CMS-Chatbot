@@ -45,7 +45,7 @@ class ChatboxResourceController extends ResourceController
         if ($request->ajax()) {
             $view = 'chatbox::chatbox.more';
         }
-        return $this->response->setMetaTitle('Chatbox Criar Conversa')
+        return $this->response->setMetaTitle('Chatbox Conversa')
             ->view($view)
             ->data(compact('data', 'meta'))
             ->output();
@@ -63,14 +63,18 @@ class ChatboxResourceController extends ResourceController
     public function show(ChatboxRequest $request, Chatbox $data)
     {
 
+        $request;
+        $data;
+
         if ($data->exists) {
+
             $view = 'chatbox::chatbox.show';
         } else {
             $view = 'chatbox::chatbox.new';
         }
 
         return $this->response
-            ->setMetaTitle('Chatbox Criar Conversa')
+            ->setMetaTitle('Chatbox Mostrar Conversa')
             ->data(compact('data'))
             ->view($view)
             ->output();
@@ -130,7 +134,6 @@ class ChatboxResourceController extends ResourceController
                         'pergunta' => $pergunta[$i],
                         'resposta' => $resposta[$i],
                         'nome_prox' => $nome_prox[$i],
-                        'upload_folder' => $upload_folder[$i]
                     );
                 }
                 if ($tipo[$i] == 'Resposta'){
@@ -152,7 +155,7 @@ class ChatboxResourceController extends ResourceController
                         'pergunta' => $pergunta[$i],
                         'resposta' => $resposta[$i],
                         'nome_prox' => $nome_prox[$i],
-                        'upload_folder' => $upload_folder[$i]                    
+                        'upload_folder' => $upload_folder                    
                         );
                 }
                 if ($tipo[$i] == 'Imagem'){
@@ -164,7 +167,7 @@ class ChatboxResourceController extends ResourceController
                         'pergunta' => $pergunta[$i],
                         'resposta' => $resposta[$i],
                         'nome_prox' => $nome_prox[$i],
-                        'upload_folder' => $upload_folder[$i]                    
+                        'upload_folder' => $upload_folder                    
                         );
                 }
 
@@ -187,7 +190,7 @@ class ChatboxResourceController extends ResourceController
                 $data = current($data);
             }
 
-            return $this->response->message(trans('messages.success.created', ['Module' => trans('chatbox::chatbox.conversa')]))
+            return $this->response->message("Conversa criada com sucesso")
                 ->code(204)
                 ->status('success')
                 ->data(compact('data'))
@@ -213,7 +216,7 @@ class ChatboxResourceController extends ResourceController
      */
     public function edit(ChatboxRequest $request, Chatbox $data)
     {
-        return $this->response->setMetaTitle('Chatbox Criar Conversa')
+        return $this->response->setMetaTitle('Chatbox Editar Conversa')
             ->view('chatbox::chatbox.edit')
             ->data(compact('data'))
             ->output();
@@ -236,7 +239,7 @@ class ChatboxResourceController extends ResourceController
                 ->update($attribute, $chatbox->getRouteKey());
             $data = current($data);
             return $this->response
-                ->message(trans('messages.success.updated', ['Module' => trans('chatbox::chatbox.conversa')]))
+                ->message("Conversa atualizada")
                 ->code(204)
                 ->data(compact('data'))
                 ->status('success')
@@ -266,7 +269,7 @@ class ChatboxResourceController extends ResourceController
         try {
 
             $chatbox->delete();
-            return $this->response->message(trans('messages.success.deleted', ['Module' => trans('chatbox::chatbox.conversa')]))
+            return $this->response->message('Conversa destruida')
                 ->code(202)
                 ->status('success')
                 ->url(guard_url('chatbox/chatbox/'. $chatbox->getRouteKey()))
@@ -301,7 +304,7 @@ class ChatboxResourceController extends ResourceController
                 $this->repository->delete($ids);
             }
 
-            return $this->response->message(trans('messages.success.deleted', ['Module' => trans('chatbox::chatbox.conversa')]))
+            return $this->response->message("Conversa deletada")
                 ->status("success")
                 ->code(202)
                 ->url(guard_url('chatbox/chatbox'))
@@ -331,7 +334,7 @@ class ChatboxResourceController extends ResourceController
             $ids = hashids_decode($request->input('ids'));
             $this->repository->restore($ids);
 
-            return $this->response->message(trans('messages.success.restore', ['Module' => trans('chatbox::chatbox.conversa')]))
+            return $this->response->message("Conversa restaurada")
                 ->status("success")
                 ->code(202)
                 ->url(guard_url('chatbox/chatbox'))

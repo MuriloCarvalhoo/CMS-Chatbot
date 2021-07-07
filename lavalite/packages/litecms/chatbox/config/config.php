@@ -39,13 +39,14 @@ return [
                 'type' => 'file',
             ],
         ],
+        'casts' => [
+            'file' => 'array',
+        ],
         'encrypt' => ['id'],
         'revision' => ['conversa', 'nome'],
         'perChatbox' => '20',
         'search' => [
-
             'conversa' => 'like',
-            'nome' => 'like',
         ],
     ],
 ];
