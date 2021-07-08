@@ -506,7 +506,8 @@ $(document).on( "click", "#delete-imagem", function() {
 
 //Pegar valor do formulario na pagina entry.blade no modo = SHOW (input conversa)
 $(document).on( "click", "#tipoPergunta", function() {
-  //var conversa = $("input #conversa").val();
-  $("#showFunc").append("<div>teste</div>");//.attr("id", conversa);
+  var conversa = $("input#conversa").val();
+  var div = $("<div>"+ conversa +"</div>").attr("id", conversa);
+  $("#showFunc").append(div);
 });
 
