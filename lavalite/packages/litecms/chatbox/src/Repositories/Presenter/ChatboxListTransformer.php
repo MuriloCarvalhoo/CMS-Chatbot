@@ -18,6 +18,8 @@ class ChatboxListTransformer extends TransformerAbstract
             'pergunta' => $chatbox->pergunta,
             'resposta'  => $chatbox->resposta,
             'nome_prox'  => $chatbox->nome_prox,
+            'file'  => $chatbox->file,
+
         ];
     }
 }

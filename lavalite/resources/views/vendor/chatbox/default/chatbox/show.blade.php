@@ -18,7 +18,31 @@
     ->method('PUT')
     ->action(guard_url('chatbox/chatbox/'. $data->getRouteKey()))!!}
 
+    @php
+        $tipo = $data->tipo
+    @endphp
+
+    @if ($tipo == "Pergunta")
+
+    @include('chatbox::chatbox.partial.entryPergunta', ['mode' => 'show'])
+
+    @elseif ($tipo == "Resposta")
+
+    @include('chatbox::chatbox.partial.entryResposta', ['mode' => 'show'])
+
+    @elseif ($tipo == "Anexo")
+
+    @include('chatbox::chatbox.partial.entryAnexo', ['mode' => 'show'])
+
+    @elseif ($tipo == "Imagem")
+
+    @include('chatbox::chatbox.partial.entryImagem', ['mode' => 'show'])
+
+    @else 
+
     @include('chatbox::chatbox.partial.entry', ['mode' => 'show'])
+        
+    @endif
 
     {!!Form::close()!!}
 </div>

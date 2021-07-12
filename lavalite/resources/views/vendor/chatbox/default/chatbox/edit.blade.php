@@ -25,7 +25,31 @@
     ->enctype('multipart/form-data')
     ->action(guard_url('chatbox/chatbox/'. $data->getRouteKey()))!!}
 
-    @include('chatbox::chatbox.partial.entry', ['mode' => 'edit'])
+    @php
+    $tipo = $data->tipo
+    @endphp
+
+    @if ($tipo == "Pergunta")
+
+    @include('chatbox::chatbox.partial.entryPergunta', ['mode' => 'show'])
+
+    @elseif ($tipo == "Resposta")
+
+    @include('chatbox::chatbox.partial.entryResposta', ['mode' => 'show'])
+
+    @elseif ($tipo == "Anexo")
+
+    @include('chatbox::chatbox.partial.entryAnexo', ['mode' => 'edit'])
+
+    @elseif ($tipo == "Imagem")
+
+    @include('chatbox::chatbox.partial.entryImagem', ['mode' => 'edit'])
+
+    @else 
+
+    @include('chatbox::chatbox.partial.entry', ['mode' => 'show'])
+
+    @endif
 
     {!!Form::close()!!}
 </div>

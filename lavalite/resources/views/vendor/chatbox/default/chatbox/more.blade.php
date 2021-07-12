@@ -1,15 +1,10 @@
-
-@php
-    $lastConversa = "";
-@endphp
-
 @foreach($data as $key => $value)
 
 @php
     $firstConversa = $value['conversa'];
 @endphp
 
-@if ($firstConversa !== $lastConversa)
+
     
 
 <div class="app-item">
@@ -19,6 +14,7 @@
         <label class="app-project-name bg-secondary" for="task_{{$firstConversa}}">{{$firstConversa[0]}}</label>
         <h3>{{$firstConversa}}</h3>
         <div class="app-metas">
+            <p>{{$value['tipo']}}</p>
             <span class="badge badge-status in-progress">Conversa Gerada</span>
         </div>
     </div>
@@ -42,12 +38,5 @@
         </div>
     </div>
 </div>
-
-@endif
-
-
-@php
-    $lastConversa = $firstConversa;    
-@endphp
 
 @endforeach

@@ -62,10 +62,6 @@ class ChatboxResourceController extends ResourceController
      */
     public function show(ChatboxRequest $request, Chatbox $data)
     {
-
-        $request;
-        $data;
-
         if ($data->exists) {
 
             $view = 'chatbox::chatbox.show';

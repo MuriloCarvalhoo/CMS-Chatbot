@@ -5,11 +5,10 @@
                 <div class="section-title">Conversa Chatbox</div>
                 <div class="row">
                     <div class="col-12">
-                        {!! Form::text('conversa')
-                        -> label('Nome da conversa')
-                        -> required()
-                        -> placeholder('Digite um nome para conversa')
-                        !!}
+                        <div class="form-group">
+                            <label for="conversa" class="control-label">Nome da conversa</label>
+                            <input type="text" id="conversa" name="conversa" class="form-control" required placeholder="Digite um nome para conversa" value="{{ $data->conversa}}">
+                        </div>
                     </div> 
                     
                     <!--escolher o tipo de pergunta-->
@@ -21,18 +20,11 @@
                             <option value="respostaUnica">Resposta</option>
                             <option value="anexo">Anexo</option>
                             <option value="imagem">Imagem</option>
-
                         </select>
-                    </div>
+                    </div>                    
                 </div>
             </div>    
             <div class="showFunc" id="showFunc"></div>
-            @php
-                $conversa = DB::select('select * from chatboxs where conversa = ?', [$_POST['conversa']]);
-                echo $conversa;    
-            @endphp
-
-
 
             
         </div>
