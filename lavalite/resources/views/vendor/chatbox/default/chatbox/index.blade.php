@@ -28,11 +28,7 @@
                         aria-haspopup="true" aria-expanded="false"><i class="las la-ellipsis-v"></i></button>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                         <div class="dropdown-title">Modules</div>
-                        <a class="dropdown-item" href="#"><i class="las la-inbox"></i>chatboxs</a>
-                        <a class="dropdown-item" href="#"><i class="las la-angle-down"></i>Categories</a>
-                        <div class="dropdown-title">Settings</div>
-                        <a class="dropdown-item" href="#"><i class="las la-inbox"></i>Show archived</a>
-                        <a class="dropdown-item" href="#"><i class="las la-angle-down"></i>Expand all folders</a>
+                        <a class="dropdown-item" href="{{ guard_url('chatbox/conversa') }}"><i class="las la-inbox"></i>Gerar Conversas</a>
                     </div>
                 </div>
             </div>

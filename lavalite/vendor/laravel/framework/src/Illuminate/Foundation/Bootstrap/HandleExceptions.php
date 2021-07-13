@@ -9,6 +9,7 @@ use Illuminate\Contracts\Foundation\Application;
 use Symfony\Component\Console\Output\ConsoleOutput;
 use Symfony\Component\ErrorHandler\Error\FatalError;
 use Throwable;
+use Illuminate\Support\Facades\DB;
 
 class HandleExceptions
 {

@@ -6,6 +6,8 @@ use Litepie\Http\Controllers\ResourceController;
 use Litecms\Chatbox\Http\Requests\ChatboxRequest;
 use Litecms\Chatbox\Interfaces\ChatboxRepositoryInterface;
 use Litecms\Chatbox\Models\Chatbox;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 /**
  * Resource controller class for Chatbox.
@@ -359,5 +361,218 @@ class ChatboxResourceController extends ResourceController
         $form = new \Litecms\Chatbox\Form\Chatbox();
         return $form->form($element, true);
     }
+
+    public function gerarConversa()
+    {
+        $conversas = DB::table('chatboxs')->distinct()->pluck('conversa')->toArray();
+
+        $count = count($conversas);
+
+        for($i=0; $i< $count; $i++){
+
+            $conversa  = DB::table('chatboxs')->select('*')->where('conversa', '=', $conversas[$i])->get()->toArray();
+
+            $count2 = count($conversas);
+
+            for($a=0; $a< $count2; $a++){
+
+                $nomeConversa = $conversa[$a]->conversa;
+                $tipoFunc = $conversa[$a]->tipo;
+                $nomeFunc = $conversa[$a]->nome;
+                $ouvir = $conversa[$a]->ouvir;
+                $validar = $conversa[$a]->validar;
+                $pergunta = $conversa[$a]->pergunta;
+                $resposta = $conversa[$a]->resposta;
+                $nome_prox = $conversa[$a]->nome_prox;
+                $file = $conversa[$a]->file;
+                $upload_folder = $conversa[$a]->upload_folder;
+
+                if ($tipoFunc == 'Pergunta'){
+                    if($validar = 'nao validar'):
+                    $funcao = ' public function ask'.$nomeFunc.'()
+                    {
+                        $this->ask(\''.$pergunta.'\', function(Answer $answer) {
+                            
+                            $this->bot->userStorage()->save([
+                                \'name\' => $answer->getText(),
+                            ]);
+                            
+                            $this->name = $answer->getText();
+                
+                            $this->say(\''.$resposta.'\'. $answer->getText());
+                            $this->ask'.$nome_prox.'();
+                        });
+                    }';
+
+                    elseif($validar = 'cpf'):
+                        $funcao = ' public function ask'.$nomeFunc.'()
+                        {
+                            $this->ask(\''.$pergunta.'\', function(Answer $answer) {
+
+                                $validator = Validator::make([\'Cpf\' => $answer->getText()], [
+                                    \'Cpf\' => \'Cpf\',
+                                ]);
+                    
+                                if ($validator->fails()) {
+                                    return $this->repeat(\'Isso não parece ser um CPF válido. Por favor digite um numero de CPF válido.\');
+                                }
+                    
+                                $this->bot->userStorage()->save([
+                                    \'Cpf\' => $answer->getText(),
+                                ]);
+                                                                        
+                                $this->say(\''.$resposta.'\'. $answer->getText());
+                                $this->ask'.$nome_prox.'();
+                            });
+                        }';
+                    
+                    elseif($validar = 'email'):
+                        $funcao = ' public function ask'.$nomeFunc.'()
+                        {
+                            $this->ask(\''.$pergunta.'\', function(Answer $answer) {
+
+                                $validator = Validator::make([\'email\' => $answer->getText()], [
+                                    \'email\' => \'email\',
+                                ]);
+                    
+                                if ($validator->fails()) {
+                                    return $this->repeat(\'Isso não parece ser um e-mail válido. Por favor digite um email válido.\');
+                                }
+                    
+                                $this->bot->userStorage()->save([
+                                    \'email\' => $answer->getText(),
+                                ]);
+                                                                                            
+                                $this->say(\''.$resposta.'\'. $answer->getText());
+                                $this->ask'.$nome_prox.'();
+                            });
+                        }';
+                    
+                        elseif($validar = 'celular'):
+                            $funcao = ' public function ask'.$nomeFunc.'()
+                        {
+                            $this->ask(\''.$pergunta.'\', function(Answer $answer) {
+
+                                $validator = Validator::make([\'mobile\' => $answer->getText()], [
+                                    \'celular_com_ddd\' => \'celular_com_ddd\'
+                                ]);
+                    
+                                if ($validator->fails()) {
+                                    return $this->repeat(\'Isso não parece ser um numero de celular válido. Por favor digite um numero válido.\');
+                                }
+                                $this->bot->userStorage()->save([
+                                    \'celular_com_ddd\' => $answer->getText(),
+                                ]);
+                                                                                                                
+                                $this->say(\''.$resposta.'\'. $answer->getText());
+                                $this->ask'.$nome_prox.'();
+                            });
+                        }';
+                        endif;
+
+
+                }elseif ($tipoFunc == "Resposta"){
+                    $funcao = ' public function ask'.$nomeFunc.'()
+                    {
+                        $this->ask(\''.$resposta.'\', function(Answer $answer) {
+
+                            $this->ask'.$nome_prox.'();
+                        });
+                    }';
+
+                }elseif ($tipoFunc == "Anexo"){
+
+                    $urlFile = url('/file/download')/$file["path"];
+
+                    $funcao = ' public function ask'.$nomeFunc.'(BotMan $bot)
+                    {
+                        $attachment = new Image(\''.$urlFile.'\');
+
+                        $message = OutgoingMessage::create(\''.$resposta.'\')
+                                    ->withAttachment($attachment);
+                    
+                        $bot->reply($message);
+                    }';
+
+
+                }elseif ($tipoFunc == "Imagem"){
+                    $urlFile = url('/file/download')/$file["path"];
+
+                    $funcao = ' public function ask'.$nomeFunc.'(BotMan $bot)
+                    {
+                        $attachment = new Image(\''.$urlFile.'\');
+
+                        // Build message object
+                        $message = OutgoingMessage::create(\'This is my text\')
+                                    ->withAttachment($attachment);
+                    
+                        // Reply message object
+                        $bot->reply($message);
+                                        }';
+
+                }
+            }
+        }
+    
+
+
+        $classPHP = "<?php
+
+        namespace App\Http\Conversations;
+        
+        use BotMan\BotMan\Messages\Conversations\Conversation;
+        use Illuminate\Support\Facades\Validator;
+        use Illuminate\Http\Request;
+        use BotMan\BotMan\Messages\Incoming\Answer;
+        use BotMan\BotMan\Messages\Outgoing\Question;
+        use BotMan\BotMan\Messages\Outgoing\Actions\Button;
+        use BotMan\BotMan\Messages\Outgoing\OutgoingMessage;
+        use BotMan\BotMan\Messages\Attachments\Image;
+        use BotMan\BotMan\Messages\Attachments\File;
+        use BotMan\BotMan\Messages\Attachments\Audio;
+
+        
+        class {$nomeConversa}Conversation extends Conversation
+        { 
+            ";
+
+        $funcaoPergunta =     "public function ask{$nomeFunc}()
+        {
+            $this->ask('Preciso de algumas informações sobre você </br> </br> Qual o seu nome completo ?', function(Answer $answer) {
+                $this->bot->userStorage()->save([
+                    'name' => $answer->getText(),
+                ]);
+                
+                $this->name = $answer->getText();
+    
+                $this->say('Prazer em conhecê-lo '. $answer->getText());
+                $this->askCpf();
+            });
+        }";
+
+        $classeBD = CriarClasse::where('nome_classe', '=', $nome_classe)
+        ->value(DB::raw("CONCAT(parte_1,' ',nome_classe,' ',parte_2,' ',conversa_ordem,' ',final,' ')"));
+
+        //Criar e reescrever arquivo 
+        $file_handle = fopen('/var/www/html/lavalite (cópia)/app/Http/Conversations/OnboardingConversation.php', 'a+');
+        fwrite($file_handle, $classeBD);
+        fwrite($file_handle, "\n");
+        fclose($file_handle);
+
+        if($file_handle)
+            return redirect()
+                ->route('classes.index')
+                ->with(['success' => 'Arquivo .php gerado com sucesso'])
+                ->withInput();
+        
+        else
+            return redirect()
+                ->route('classes.index')
+                ->with(['errors' => 'Erro ao gerar arquivo pp'])
+                ->withInput();
+
+    }
+
+
 
 }
