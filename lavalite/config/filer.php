@@ -48,7 +48,7 @@ return [
 
     'allowed_extensions_check' => true,
     // Case insensitive
-    'allowed_extensions'       => ['png', 'gif', 'jpg', 'jpeg', 'doc',
+    'allowed_extensions'       => ['png', 'gif', 'jpg', 'jpeg', 'docs',
         'docx', 'pdf', 'xls', 'xlsx', 'mp3', 'txt', 'zip', 'bmp', 'jpeg', ],
 
     // Max upload size - In BYTES. 1GB = 1073741824 bytes, 10 MB = 10485760, 1 MB = 1048576
@@ -74,7 +74,7 @@ return [
     // Must also be supported by invention. http://intervention.olivervogel.net/image/formats/image
     'image_types'              => ['image/png', 'image/gif', 'image/jpg', 'image/jpeg'],
 
-    'image_extensions'         => ['png', 'gif', 'jpg', 'jpeg'], // Case insensitive
+    'image_extensions'         => ['png', 'gif', 'jpg', 'jpeg', 'pdf'], // Case insensitive
 
     'image_resize_on_upload'   => false,
 

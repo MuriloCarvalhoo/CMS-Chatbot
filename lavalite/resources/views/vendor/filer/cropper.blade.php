@@ -7,7 +7,7 @@ $image = head($files);
     <div class="btn-group">
 
     <label class="btn btn-primary" for="inputImage" title="Change Image">
-      <input type="file" class="sr-only" id="inputImage" name="file" accept=".jpg,.jpeg,.png,.gif">
+      <input type="file" class="sr-only" id="inputImage" name="file" >
       <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="Upload new image">
         <span class="fa fa-upload"></span>
       </span>

@@ -2,7 +2,7 @@
 <div class="upload-wraper">
     
 <div class="dropzone  dropzone-previews" id="{!!$field!!}">
-    
+ 
 </div>
 
 <script type="text/javascript">

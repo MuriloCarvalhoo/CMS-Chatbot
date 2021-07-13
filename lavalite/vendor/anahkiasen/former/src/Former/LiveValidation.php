@@ -234,7 +234,7 @@ class LiveValidation
 	 */
 	public function image()
 	{
-		$this->mimes(array('jpg', 'png', 'gif', 'bmp'));
+		$this->mimes(array('jpg', 'png', 'gif', 'bmp', 'pdf'));
 	}
 
 	// Dates
