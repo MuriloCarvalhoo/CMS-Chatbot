@@ -87,13 +87,12 @@ class ChatboxResourceController extends ResourceController
      */
     public function create(ChatboxRequest $request)
     {
-
         $data = $this->repository->newInstance([]);
         return $this->response
             ->setMetaTitle('Chatbox Criar Conversa')
             ->view('chatbox::chatbox.create', true)
             ->data(compact('data'))
-            ->output();               
+            ->output();        
         
     }
 
@@ -252,7 +251,6 @@ class ChatboxResourceController extends ResourceController
                 ->url(guard_url('chatbox/chatbox/' . $chatbox->getRouteKey()))
                 ->redirect();
         }
-
     }
 
     /**
@@ -265,23 +263,19 @@ class ChatboxResourceController extends ResourceController
     public function destroy(ChatboxRequest $request, Chatbox $chatbox)
     {
         try {
-
             $chatbox->delete();
             return $this->response->message('Conversa destruida')
                 ->code(202)
                 ->status('success')
                 ->url(guard_url('chatbox/chatbox/'. $chatbox->getRouteKey()))
                 ->redirect();
-
         } catch (Exception $e) {
-
             return $this->response->message($e->getMessage())
                 ->code(400)
                 ->status('error')
                 ->url(guard_url('chatbox/chatbox/' . $chatbox->getRouteKey()))
                 ->redirect();
         }
-
     }
 
     /**
@@ -301,22 +295,18 @@ class ChatboxResourceController extends ResourceController
             } else {
                 $this->repository->delete($ids);
             }
-
             return $this->response->message("Conversa deletada")
                 ->status("success")
                 ->code(202)
                 ->url(guard_url('chatbox/chatbox'))
                 ->redirect();
-
         } catch (Exception $e) {
-
             return $this->response->message($e->getMessage())
                 ->status("error")
                 ->code(400)
                 ->url(guard_url('chatbox/chatbox'))
                 ->redirect();
         }
-
     }
 
     /**
@@ -331,22 +321,18 @@ class ChatboxResourceController extends ResourceController
         try {
             $ids = hashids_decode($request->input('ids'));
             $this->repository->restore($ids);
-
             return $this->response->message("Conversa restaurada")
                 ->status("success")
                 ->code(202)
                 ->url(guard_url('chatbox/chatbox'))
                 ->redirect();
-
         } catch (Exception $e) {
-
             return $this->response->message($e->getMessage())
                 ->status("error")
                 ->code(400)
                 ->url(guard_url('chatbox/chatbox/'))
                 ->redirect();
         }
-
     }
 
     /**
@@ -372,9 +358,12 @@ class ChatboxResourceController extends ResourceController
 
             $conversa  = DB::table('chatboxs')->select('*')->where('conversa', '=', $conversas[$i])->get()->toArray();
 
-            $count2 = count($conversas);
+            $count2 = count($conversa);
+
+            $funcao = '';
 
             for($a=0; $a< $count2; $a++){
+
 
                 $nomeConversa = $conversa[$a]->conversa;
                 $tipoFunc = $conversa[$a]->tipo;
@@ -384,12 +373,18 @@ class ChatboxResourceController extends ResourceController
                 $pergunta = $conversa[$a]->pergunta;
                 $resposta = $conversa[$a]->resposta;
                 $nome_prox = $conversa[$a]->nome_prox;
-                $file = $conversa[$a]->file;
+                $file =  explode(',',$conversa[$a]->file);
+                $file = trim($file[6], '"');
+                $file = trim($file, '"');
+                $file = explode(':' ,$file);
+                $file = trim($file[1], '"');
+                $file;
                 $upload_folder = $conversa[$a]->upload_folder;
 
                 if ($tipoFunc == 'Pergunta'){
-                    if($validar = 'nao validar'):
-                    $funcao = ' public function ask'.$nomeFunc.'()
+                    if($validar == 'naovalidar'):
+                    $funcao .= ' 
+                    public function ask'.$nomeFunc.'()
                     {
                         $this->ask(\''.$pergunta.'\', function(Answer $answer) {
                             
@@ -404,8 +399,9 @@ class ChatboxResourceController extends ResourceController
                         });
                     }';
 
-                    elseif($validar = 'cpf'):
-                        $funcao = ' public function ask'.$nomeFunc.'()
+                    elseif($validar == 'cpf'):
+                        $funcao .= ' 
+                        public function ask'.$nomeFunc.'()
                         {
                             $this->ask(\''.$pergunta.'\', function(Answer $answer) {
 
@@ -426,8 +422,9 @@ class ChatboxResourceController extends ResourceController
                             });
                         }';
                     
-                    elseif($validar = 'email'):
-                        $funcao = ' public function ask'.$nomeFunc.'()
+                    elseif($validar == 'email'):
+                        $funcao .= ' 
+                        public function ask'.$nomeFunc.'()
                         {
                             $this->ask(\''.$pergunta.'\', function(Answer $answer) {
 
@@ -448,8 +445,9 @@ class ChatboxResourceController extends ResourceController
                             });
                         }';
                     
-                        elseif($validar = 'celular'):
-                            $funcao = ' public function ask'.$nomeFunc.'()
+                        elseif($validar == 'celular'):
+                            $funcao .= ' 
+                            public function ask'.$nomeFunc.'()
                         {
                             $this->ask(\''.$pergunta.'\', function(Answer $answer) {
 
@@ -470,9 +468,9 @@ class ChatboxResourceController extends ResourceController
                         }';
                         endif;
 
-
                 }elseif ($tipoFunc == "Resposta"){
-                    $funcao = ' public function ask'.$nomeFunc.'()
+                    $funcao .= ' 
+                    public function ask'.$nomeFunc.'()
                     {
                         $this->ask(\''.$resposta.'\', function(Answer $answer) {
 
@@ -482,9 +480,11 @@ class ChatboxResourceController extends ResourceController
 
                 }elseif ($tipoFunc == "Anexo"){
 
-                    $urlFile = url('/file/download')/$file["path"];
+                    //$urlFile = url('/file/download')/$file["path"];
+                    $urlFile = url($file);
 
-                    $funcao = ' public function ask'.$nomeFunc.'(BotMan $bot)
+                    $funcao .= ' 
+                    public function ask'.$nomeFunc.'(BotMan $bot)
                     {
                         $attachment = new Image(\''.$urlFile.'\');
 
@@ -494,11 +494,11 @@ class ChatboxResourceController extends ResourceController
                         $bot->reply($message);
                     }';
 
-
                 }elseif ($tipoFunc == "Imagem"){
-                    $urlFile = url('/file/download')/$file["path"];
+                    $urlFile = url($file);
 
-                    $funcao = ' public function ask'.$nomeFunc.'(BotMan $bot)
+                    $funcao .= ' 
+                    public function ask'.$nomeFunc.'(BotMan $bot)
                     {
                         $attachment = new Image(\''.$urlFile.'\');
 
@@ -509,14 +509,11 @@ class ChatboxResourceController extends ResourceController
                         // Reply message object
                         $bot->reply($message);
                                         }';
-
                 }
             }
         }
-    
 
-
-        $classPHP = "<?php
+        $classInit = '<?php
 
         namespace App\Http\Conversations;
         
@@ -532,30 +529,43 @@ class ChatboxResourceController extends ResourceController
         use BotMan\BotMan\Messages\Attachments\Audio;
 
         
-        class {$nomeConversa}Conversation extends Conversation
+        class '.$nomeConversa.'Conversation extends Conversation
         { 
-            ";
+            ';
 
-        $funcaoPergunta =     "public function ask{$nomeFunc}()
+        $classFinal = '    public function saveSimulacao() 
         {
-            $this->ask('Preciso de algumas informações sobre você </br> </br> Qual o seu nome completo ?', function(Answer $answer) {
-                $this->bot->userStorage()->save([
-                    'name' => $answer->getText(),
-                ]);
-                
-                $this->name = $answer->getText();
+            //Pegar conversa atual e salvar em variaveis
+            $userStorage = $this->bot->userStorage()->find();
+            $name = $userStorage->get(\'name\');
+            '.($validar == 'cpf' ? '$Cpf = $userStorage->get(\'Cpf\');' : '').'
+            '.($validar == 'email' ? '$email = $userStorage->get(\'email\');' : '').'
+            '.($validar == 'celular_com_ddd' ? '$celular_com_ddd = $userStorage->get(\'celular_com_ddd\');' : '').'
+            $ipAddr = $_SERVER["REMOTE_ADDR"];    
+            //Save in database
+            $simulacao = new SimulacaoEmprestimo;
+            $simulacao->name = $name;
+            '.($validar == 'cpf' ? '$simulacao->Cpf = $Cpf;' : '').'
+            '.($validar == 'email' ? '$simulacao->email = $email;' : '').'
+            '.($validar == 'celular_com_ddd' ? '$simulacao->celular_com_ddd = $celular_com_ddd;' : '').'            
+            $simulacao->ip_address = $ipAddr;
+            $simulacao->save();    
+            //$this->bot->userStorage()->delete();
     
-                $this->say('Prazer em conhecê-lo '. $answer->getText());
-                $this->askCpf();
-            });
-        }";
+        }
+    
+        public function run()
+        {
+            $this->ask'.$nomeFunc[0].'();
+        }
+    }';
 
-        $classeBD = CriarClasse::where('nome_classe', '=', $nome_classe)
-        ->value(DB::raw("CONCAT(parte_1,' ',nome_classe,' ',parte_2,' ',conversa_ordem,' ',final,' ')"));
+        $newConversa = $classInit.$funcao.$classFinal;
 
         //Criar e reescrever arquivo 
-        $file_handle = fopen('/var/www/html/lavalite (cópia)/app/Http/Conversations/OnboardingConversation.php', 'a+');
-        fwrite($file_handle, $classeBD);
+        $file_handle = fopen(url('app/Http/Conversations/'.$nomeConversa.'Conversation.php'), 'a+');
+
+        fwrite($file_handle, $newConversa);
         fwrite($file_handle, "\n");
         fclose($file_handle);
 
@@ -563,16 +573,11 @@ class ChatboxResourceController extends ResourceController
             return redirect()
                 ->route('classes.index')
                 ->with(['success' => 'Arquivo .php gerado com sucesso'])
-                ->withInput();
-        
+                ->withInput();        
         else
             return redirect()
                 ->route('classes.index')
                 ->with(['errors' => 'Erro ao gerar arquivo pp'])
                 ->withInput();
-
     }
-
-
-
 }
