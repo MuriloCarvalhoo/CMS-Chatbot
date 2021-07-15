@@ -480,8 +480,8 @@ class ChatboxResourceController extends ResourceController
 
                 }elseif ($tipoFunc == "Anexo"){
 
-                    //$urlFile = url('/file/download')/$file["path"];
-                    $urlFile = url($file);
+                    $urlFile = url('/file/download').'/'.$file;
+                    //$urlFile = url($file);
 
                     $funcao .= ' 
                     public function ask'.$nomeFunc.'(BotMan $bot)
@@ -495,7 +495,7 @@ class ChatboxResourceController extends ResourceController
                     }';
 
                 }elseif ($tipoFunc == "Imagem"){
-                    $urlFile = url($file);
+                    $urlFile = url('/file/download').'/'.$file;
 
                     $funcao .= ' 
                     public function ask'.$nomeFunc.'(BotMan $bot)
@@ -512,11 +512,12 @@ class ChatboxResourceController extends ResourceController
                 }
             }
         }
-
+        
         $classInit = '<?php
 
         namespace App\Http\Conversations;
         
+        use BotMan\BotMan\BotMan;
         use BotMan\BotMan\Messages\Conversations\Conversation;
         use Illuminate\Support\Facades\Validator;
         use Illuminate\Http\Request;
@@ -533,27 +534,7 @@ class ChatboxResourceController extends ResourceController
         { 
             ';
 
-        $classFinal = '    public function saveSimulacao() 
-        {
-            //Pegar conversa atual e salvar em variaveis
-            $userStorage = $this->bot->userStorage()->find();
-            $name = $userStorage->get(\'name\');
-            '.($validar == 'cpf' ? '$Cpf = $userStorage->get(\'Cpf\');' : '').'
-            '.($validar == 'email' ? '$email = $userStorage->get(\'email\');' : '').'
-            '.($validar == 'celular_com_ddd' ? '$celular_com_ddd = $userStorage->get(\'celular_com_ddd\');' : '').'
-            $ipAddr = $_SERVER["REMOTE_ADDR"];    
-            //Save in database
-            $simulacao = new SimulacaoEmprestimo;
-            $simulacao->name = $name;
-            '.($validar == 'cpf' ? '$simulacao->Cpf = $Cpf;' : '').'
-            '.($validar == 'email' ? '$simulacao->email = $email;' : '').'
-            '.($validar == 'celular_com_ddd' ? '$simulacao->celular_com_ddd = $celular_com_ddd;' : '').'            
-            $simulacao->ip_address = $ipAddr;
-            $simulacao->save();    
-            //$this->bot->userStorage()->delete();
-    
-        }
-    
+        $classFinal = '    
         public function run()
         {
             $this->ask'.$nomeFunc[0].'();
@@ -563,7 +544,9 @@ class ChatboxResourceController extends ResourceController
         $newConversa = $classInit.$funcao.$classFinal;
 
         //Criar e reescrever arquivo 
-        $file_handle = fopen(url('app/Http/Conversations/'.$nomeConversa.'Conversation.php'), 'a+');
+        //$file_handle = fopen(url('app/Http/Conversations/'.$nomeConversa.'Conversation.php'), 'a+');
+        $local = "/home/random/Documentos/chatbot/lavalite";
+        $file_handle = fopen($local.'/app/Http/Conversations/'.$nomeConversa.'Conversation.php', 'a+');
 
         fwrite($file_handle, $newConversa);
         fwrite($file_handle, "\n");
@@ -571,12 +554,12 @@ class ChatboxResourceController extends ResourceController
 
         if($file_handle)
             return redirect()
-                ->route('classes.index')
+                ->route('chatbox::chatbox.index')
                 ->with(['success' => 'Arquivo .php gerado com sucesso'])
                 ->withInput();        
         else
             return redirect()
-                ->route('classes.index')
+                ->route('chatbox::chatbox.index')
                 ->with(['errors' => 'Erro ao gerar arquivo pp'])
                 ->withInput();
     }
