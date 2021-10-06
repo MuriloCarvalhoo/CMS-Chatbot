@@ -350,7 +350,16 @@ class ChatboxResourceController extends ResourceController
 
     public function gerarConversa()
     {
+        //Pegar o caminho local do APP
+        $caminho = realpath($_SERVER["DOCUMENT_ROOT"]);
+        $pattern = '/public/';
+        $replacement = '';
+        $caminho = preg_replace($pattern, $replacement, $caminho); 
+        $caminho;
+
         $conversas = DB::table('chatboxs')->distinct()->pluck('conversa')->toArray();
+        $conversa  = DB::table('chatboxs')->select('*')->where('conversa', '=', $conversas)->get()->toArray();
+
 
         $count = count($conversas);
 
@@ -537,7 +546,7 @@ class ChatboxResourceController extends ResourceController
         $classFinal = '    
         public function run()
         {
-            $this->ask'.$nomeFunc[0].'();
+            $this->ask'.$conversa[0]->nome.'();
         }
     }';
 
@@ -545,22 +554,24 @@ class ChatboxResourceController extends ResourceController
 
         //Criar e reescrever arquivo 
         //$file_handle = fopen(url('app/Http/Conversations/'.$nomeConversa.'Conversation.php'), 'a+');
-        $local = "/home/random/Documentos/chatbot/lavalite";
-        $file_handle = fopen($local.'/app/Http/Conversations/'.$nomeConversa.'Conversation.php', 'a+');
+        //$local = "/home/$USER/Documentos/chatbot/lavalite";
+        $file_handle = fopen($caminho.'app/Http/Conversations/'.$nomeConversa.'Conversation.php', 'a+');
 
         fwrite($file_handle, $newConversa);
         fwrite($file_handle, "\n");
         fclose($file_handle);
 
         if($file_handle)
-            return redirect()
-                ->route('chatbox::chatbox.index')
-                ->with(['success' => 'Arquivo .php gerado com sucesso'])
-                ->withInput();        
+            return $this->response->message("Conversas Geradas")
+            ->status("success")
+            ->code(202)
+            ->url(guard_url('chatbox/chatbox'))
+            ->redirect();
         else
-            return redirect()
-                ->route('chatbox::chatbox.index')
-                ->with(['errors' => 'Erro ao gerar arquivo pp'])
-                ->withInput();
-    }
+            return $this->response->message()
+            ->status("error")
+            ->code(400)
+            ->url(guard_url('chatbox/chatbox/'))
+            ->redirect();
+}
 }
